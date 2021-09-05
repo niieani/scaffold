@@ -1,0 +1,6 @@
+- [ ] allow composite modules custom config
+- [ ] for this one use declarations only emit (since TS is compiled)
+- [ ] also emit declarations to 'src'
+- [ ] gitignore `src/**/*.d.ts`
+- [ ] rename from beemo-build-tools to scaffold
+- [ ] add build: false for projects that don't need building
