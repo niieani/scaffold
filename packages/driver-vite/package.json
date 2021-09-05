@@ -1,0 +1,23 @@
+{
+  "name": "@niieani/beemo-driver-vite",
+  "author": "Bazyli Brzoska <npm@invent.life> (https://invent.life)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/@niieani/beemo-build-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/@niieani/beemo-build-tools/issues"
+  },
+  "main": "src/main.ts",
+  "source": "src/main.ts",
+  "types": "lib/main.d.ts",
+  "scripts": {
+    "rrun": "rrun"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@beemo/core": "^2.0.2",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "vite": "^2.5.3"
+  }
+}

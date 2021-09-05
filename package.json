@@ -1,0 +1,45 @@
+{
+  "name": "@niieani/scaffold-monorepo",
+  "version": "0.0.13",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/@niieani/scaffold/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/@niieani/scaffold.git"
+  },
+  "author": "Bazyli Brzoska <npm@invent.life> (https://invent.life)",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "postinstallDev": "yarn prepare",
+    "prepare": "beemo create-config > /dev/null && rrun husky install .config/husky && beemo typescript:sync-project-refs",
+    "release": "beemo run-script release",
+    "test": "yarn test:format && yarn test:types && yarn test:lint && yarn test:code",
+    "format": "beemo prettier --write \"./{src,tests}/**/*.{js,json,md}\" '--workspaces=*'",
+    "foreach-run": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspaces foreach --verbose run rrun",
+    "test:lint": "beemo eslint",
+    "test:code": "beemo jest",
+    "test:types": "yarn foreach-run tsc --noEmit",
+    "test:format": "beemo prettier --check \"./{src,tests}/**/*.{js,json,md}\" '--workspaces=*'"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@niieani/scaffold": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "yarn@3.0.2"
+}

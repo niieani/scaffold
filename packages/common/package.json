@@ -1,0 +1,39 @@
+{
+  "name": "@niieani/common",
+  "author": "Bazyli Brzoska <npm@invent.life> (https://invent.life)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/@niieani/beemo-build-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/@niieani/beemo-build-tools/issues"
+  },
+  "main": "cjs/main.js",
+  "module": "esm/main.js",
+  "source": "src/main.ts",
+  "unpkg": "dist/main.js",
+  "exports": {
+    ".": {
+      "import": "./esm/main.js",
+      "require": "./cjs/main.js"
+    },
+    "./*": {
+      "import": "./esm/*.js",
+      "require": "./cjs/*.js"
+    },
+    "./cjs": {
+      "require": "./cjs/main.js"
+    },
+    "./cjs/*": {
+      "require": "./cjs/*.js"
+    },
+    "./esm/*": {
+      "import": "./esm/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "rrun": "rrun"
+  },
+  "sideEffects": false
+}
