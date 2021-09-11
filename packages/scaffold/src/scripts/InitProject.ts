@@ -11,7 +11,7 @@ import {
 } from '@beemo/core'
 import {fileExists, writePackageJson} from '../helpers/fs'
 
-import type {BeemoSettings} from '..'
+import type {ScaffoldConfig} from '..'
 
 interface Options {
   force: boolean
@@ -51,6 +51,8 @@ class InitProjectScript extends Script<Options> {
   async execute(context: ScriptContext, args: Arguments<Options>) {
     if (!context.script) return
 
+    const config = context.script.tool.config as ScaffoldConfig
+
     await $`yarn plugin import interactive-tools`
     await $`yarn plugin import typescript`
     await $`yarn plugin import https://raw.githubusercontent.com/sachinraja/yarn-plugin-postinstall-dev/main/bundles/%40yarnpkg/plugin-postinstall-dev.js`
@@ -65,9 +67,6 @@ class InitProjectScript extends Script<Options> {
 
     const rootPath = context.script.tool.project.root.path()
     const huskyHooksDir = '.config/husky'
-
-    const webpackBuild =
-      context.script.tool.driverRegistry.isRegistered('webpack')
 
     const packageName = packageJson.name ?? path.basename(process.cwd())
     const nameSplit = packageName.split('/')
@@ -95,7 +94,10 @@ class InitProjectScript extends Script<Options> {
         filename: umdFilename = path.basename(distUmd),
       } = {},
       noCompile,
-    } = context.script.tool.config.settings as BeemoSettings
+    } = config.settings ?? {}
+
+    // TODO: do something better than this:
+    const webpackBuild = Boolean(config.settings?.umd)
 
     const moduleDefinitions: Partial<PackageStructureWithMeta> = {
       main: noCompile ? source : distCjs,
