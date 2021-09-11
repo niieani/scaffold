@@ -184,10 +184,8 @@ class InitProjectScript extends Script<Options> {
         ...packageJson.scripts,
         // needs https://github.com/sachinraja/yarn-plugin-postinstall-dev
         postinstallDev: 'yarn prepare',
-        prepare: `rrun husky install ${huskyHooksDir}${
-          monorepo
-            ? ' && beemo create-config && beemo typescript:sync-project-refs'
-            : ''
+        prepare: `rrun husky install ${huskyHooksDir} && beemo create-config${
+          monorepo ? ' && beemo typescript:sync-project-refs' : ''
         }`,
         format: `yarn ${runCommand} prettier --write "./{src,tests}/**/*.{js,json,md}"`,
         ...(monorepo
