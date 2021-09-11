@@ -1,6 +1,6 @@
-# beemo-build-tools
+# @niieani/scaffold
 
-Steps:
+Installation steps:
 
 ```
 yarn set version berry
@@ -12,7 +12,7 @@ yarn add @niieani/scaffold --dev
 Setup your `.config/beemo.ts`, for example:
 
 ```ts
-import {BeemoConfig} from '@beemo/core'
+import type {BeemoConfig} from '@beemo/core'
 
 const config: BeemoConfig = {
   module: '@niieani/scaffold',
