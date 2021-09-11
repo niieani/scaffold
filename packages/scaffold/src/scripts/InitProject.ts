@@ -141,7 +141,6 @@ class InitProjectScript extends Script<Options> {
 
     const acrossWorkspacesArg = monorepo ? ` '--workspaces=*'` : ''
     const webpackArgs = {
-      entry: prefixedSource,
       outDir: 'dist',
       moduleTarget: 'umd',
       engineTarget,
@@ -216,7 +215,9 @@ class InitProjectScript extends Script<Options> {
           : {}),
         ...(webpackBuild && !noCompile
           ? {
-              'build:umd': `beemo webpack ${Object.entries(webpackArgs)
+              'build:umd': `beemo webpack --entry='${prefixedSource}' ${Object.entries(
+                webpackArgs,
+              )
                 .map(([key, value]) => `--env '${key}=${value}'`)
                 .join(' ')}${acrossWorkspacesArg}`,
             }
