@@ -55,7 +55,6 @@
         "channel": false
       },
       "next",
-      "next-major",
       {
         "name": "beta",
         "prerelease": true

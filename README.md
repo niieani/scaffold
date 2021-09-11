@@ -40,4 +40,6 @@ git init
 
 Add `NPM_TOKEN` secret to GitHub repo for semantic-release to work.
 
+Use "preSCRIPTNAME" and "postSCRIPTNAME" to customize built-in scripts.
+
 Profit!
