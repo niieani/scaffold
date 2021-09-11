@@ -21,6 +21,7 @@ const config: ESLintConfig = {
     'sort-keys': 'off',
     'no-tabs': 'error',
     'no-nested-ternary': 'off',
+    'no-plusplus': 'off',
 
     // require a eslint-enable comment for every eslint-disable comment
     'eslint-comments/disable-enable-pair': [
