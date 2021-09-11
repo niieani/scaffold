@@ -162,6 +162,7 @@ class InitProjectScript extends Script<Options> {
       },
     }
     const prettierRange = './{src,tests}/**/*[!.d].{.js,jsx,ts,tsx,json,md}'
+    const runCommand = monorepo ? 'foreach-run' : 'rrun'
 
     const updatedPackageJson: PackageStructureWithMeta = {
       ...packageJson,
@@ -181,13 +182,15 @@ class InitProjectScript extends Script<Options> {
         ...packageJson.scripts,
         // needs https://github.com/sachinraja/yarn-plugin-postinstall-dev
         postinstallDev: 'yarn prepare',
-        prepare: `beemo create-config > /dev/null && rrun husky install ${huskyHooksDir}${
-          monorepo ? ' && beemo typescript:sync-project-refs' : ''
+        prepare: `rrun husky install ${huskyHooksDir}${
+          monorepo
+            ? ' && beemo create-config && beemo typescript:sync-project-refs'
+            : ''
         }`,
-        format: `yarn foreach-run --write "./{src,tests}/**/*.{js,json,md}"`,
+        format: `yarn ${runCommand} prettier --write "./{src,tests}/**/*.{js,json,md}"`,
         ...(monorepo
           ? {
-              'foreach-run': `PATH="$PWD/node_modules/.bin:$PATH" yarn workspaces foreach --verbose run rrun`,
+              [runCommand]: `PATH="$PWD/node_modules/.bin:$PATH" yarn workspaces foreach --verbose run rrun`,
             }
           : {}),
         ...(vite
@@ -199,7 +202,7 @@ class InitProjectScript extends Script<Options> {
             }
           : {
               build: noCompile
-                ? `yarn foreach-run tsc --emitDeclarationOnly`
+                ? `yarn ${runCommand} tsc --emitDeclarationOnly`
                 : `yarn build:cjs && yarn build:esm${
                     webpackBuild ? ' && yarn build:umd' : ''
                   }`,
@@ -207,8 +210,8 @@ class InitProjectScript extends Script<Options> {
             }),
         ...(!noCompile
           ? {
-              'build:cjs': `yarn foreach-run tsc --outDir cjs --module commonjs --target ${codeTarget}`,
-              'build:esm': `yarn foreach-run tsc --outDir esm --module esnext --target ${codeTarget}`,
+              'build:cjs': `yarn ${runCommand} tsc --outDir cjs --module commonjs --target ${codeTarget}`,
+              'build:esm': `yarn ${runCommand} tsc --outDir esm --module esnext --target ${codeTarget}`,
             }
           : {}),
         ...(webpackBuild && !noCompile
@@ -226,8 +229,8 @@ class InitProjectScript extends Script<Options> {
           ? `rrun eslint 'packages/*/src/**'`
           : `rrun eslint 'src/**'`,
         'test:code': 'beemo jest',
-        'test:types': 'yarn foreach-run tsc --noEmit',
-        'test:format': `yarn foreach-run prettier --check "${prettierRange}"`,
+        'test:types': `yarn ${runCommand} tsc --noEmit`,
+        'test:format': `yarn ${runCommand} prettier --check "${prettierRange}"`,
         test: 'yarn test:format && yarn test:types && yarn test:lint && yarn test:code',
         // do not overwrite existing scripts unless --force was set:
         ...(args.options.force ? {} : packageJson.scripts),
@@ -236,6 +239,8 @@ class InitProjectScript extends Script<Options> {
       devDependencies: packageJson.devDependencies ?? {},
       workspaces,
       release: packageJson.release ?? {
+        // eslint-disable-next-line no-template-curly-in-string
+        tagFormat: monorepo ? undefined : '${version}',
         branches: [
           '+([0-9])?(.{+([0-9]),x}).x',
           'master',
@@ -244,7 +249,6 @@ class InitProjectScript extends Script<Options> {
             channel: false,
           },
           'next',
-          'next-major',
           {
             name: 'beta',
             prerelease: true,
