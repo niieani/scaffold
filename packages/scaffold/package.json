@@ -26,7 +26,8 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "@beemo/cli": "^2.0.1",
-    "@beemo/config-constants": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch",
+    "@beemo/config-constants": "^1.0.2",
+    "@beemo/config-constants-patched": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch",
     "@beemo/config-eslint": "^1.0.10",
     "@beemo/config-jest": "^1.1.1",
     "@beemo/core": "^2.0.2",
@@ -67,8 +68,5 @@
     "@types/lodash": "^4.14.172",
     "@types/prettier": "^2.3.2",
     "@types/which": "^2.0.1"
-  },
-  "resolutions": {
-    "@beemo/config-constants": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch"
   }
 }

@@ -1337,17 +1337,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@beemo/config-constants-patched@patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch::locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold":
+  version: 1.0.2
+  resolution: "@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A1.0.2#./patches/@beemo+config-constants.patch::version=1.0.2&hash=e1eca2&locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold"
+  checksum: cbf8478293c2c7cacc7a1c2ef047e10babccb97fb9dd8cefe9abf9709ae9b8d251325a1a4231d3270eec305be3e245d1f2ccbf86f44eb29e77e9c07c557eb6cc
+  languageName: node
+  linkType: hard
+
 "@beemo/config-constants@1.0.2, @beemo/config-constants@npm:^1.0.2":
   version: 1.0.2
   resolution: "@beemo/config-constants@npm:1.0.2"
   checksum: fadfe9c73dd54f83409cbe471aef599294e873b9b4d5717cd126e02f662da31c566f1dcbf6e53a0ad69b880cf0d0f416c330012688ecf5725e8ebdfd9cd31ae0
-  languageName: node
-  linkType: hard
-
-"@beemo/config-constants@patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch::locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold":
-  version: 1.0.2
-  resolution: "@beemo/config-constants@patch:@beemo/config-constants@npm%3A1.0.2#./patches/@beemo+config-constants.patch::version=1.0.2&hash=e1eca2&locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold"
-  checksum: 28b66ac84545f40fe438c89457fb193c8a6e184ba5a620e43b6ac2e1dce6cdc049e8e8b7b94c9596f49723d136081d2705b020b15d2725b630ea59f02dd86712
   languageName: node
   linkType: hard
 
@@ -2178,7 +2178,8 @@ __metadata:
     "@babel/core": ^7.15.5
     "@babel/preset-env": ^7.15.6
     "@beemo/cli": ^2.0.1
-    "@beemo/config-constants": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch"
+    "@beemo/config-constants": ^1.0.2
+    "@beemo/config-constants-patched": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch"
     "@beemo/config-eslint": ^1.0.10
     "@beemo/config-jest": ^1.1.1
     "@beemo/core": ^2.0.2

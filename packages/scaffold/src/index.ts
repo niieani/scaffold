@@ -1,3 +1,5 @@
+import {IGNORE_LIST} from '@beemo/config-constants'
+import {IGNORE_LIST as IGNORE_LIST_PATCHED} from '@beemo/config-constants-patched'
 import type {BeemoConfig, ConfigObject, Path, Tool} from '@beemo/core'
 import {CreateConfigRoutine} from '@beemo/core/lib/routines/CreateConfigRoutine'
 import type {TypeScriptDriver} from '@beemo/driver-typescript'
@@ -28,6 +30,10 @@ export interface BeemoSettings {
 }
 
 export default async function bootstrap(tool: Tool) {
+  // hack, will be fixed when not using `beemo`
+  IGNORE_LIST.length = 0
+  IGNORE_LIST.push(...IGNORE_LIST_PATCHED)
+
   // workaround for https://github.com/beemojs/beemo/issues/146
   tool.scriptRegistry.onAfterRegister.listen((script) => {
     // eslint-disable-next-line no-param-reassign

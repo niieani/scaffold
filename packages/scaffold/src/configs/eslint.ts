@@ -1,4 +1,4 @@
-import {TESTS_LIST} from '@beemo/config-constants'
+import {TESTS_LIST} from '@beemo/config-constants-patched'
 import beemoConfig from '@beemo/config-eslint'
 import type {ESLintConfig} from '@beemo/driver-eslint'
 import {ignore} from './shared/ignore'
