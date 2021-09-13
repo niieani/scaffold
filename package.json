@@ -1,6 +1,5 @@
 {
   "name": "@niieani/scaffold-monorepo",
-  "version": "0.0.13",
   "private": true,
   "bugs": {
     "url": "https://github.com/niieani/scaffold/issues"
