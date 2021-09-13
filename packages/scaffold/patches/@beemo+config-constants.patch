@@ -1,0 +1,22 @@
+diff --git a/lib/constants.js b/lib/constants.js
+index 3af6347a063956d87289b1629a402bb9ad9df9e4..f88fd30e868cd84eace2fce5c23b3428e20e6241 100644
+--- a/lib/constants.js
++++ b/lib/constants.js
+@@ -25,12 +25,12 @@ const ECMA_VERSION = 2020; // Files and folders to always ignore
+ 
+ const IGNORE_LIST = ['node_modules/', 'build/', 'cjs/', 'coverage/', 'dist/', 'dts/', 'esm/', 'lib/', 'mjs/', 'umd/']; // Globs for finding source files, test files, and test utility files
+ 
+-const ALL_FILES_GLOB = '**/{src,tests,__tests__}/**/*.{ts,tsx}';
+-const SOURCE_FILES_GLOB = '**/src/**/*.{ts,tsx}';
+-const TEST_FILES_GLOB = '**/{tests,__tests__}/**/*.test.{ts,tsx}';
+-const TEST_UTILS_GLOB = '**/{tests,__tests__}/**/*.{ts,tsx}'; // List of globs to find all test related files
++const ALL_FILES_GLOB = '**/{src,tests,__tests__}/**/*[!.d].{ts,tsx}';
++const SOURCE_FILES_GLOB = '**/src/**/*[!.d].{ts,tsx}';
++const TEST_FILES_GLOB = '**/{tests,__tests__}/**/*.test[!.d].{ts,tsx}';
++const TEST_UTILS_GLOB = '**/{tests,__tests__}/**/*[!.d].{ts,tsx}'; // List of globs to find all test related files
+ 
+-const TESTS_LIST = [TEST_FILES_GLOB, TEST_UTILS_GLOB, 'test.{ts,tsx}']; // Pattern of non-JS/TS file extensions
++const TESTS_LIST = [TEST_FILES_GLOB, TEST_UTILS_GLOB, '**/*.test[!.d].{ts,tsx}']; // Pattern of non-JS/TS file extensions
+ 
+ const NON_TS_REGEX = '\\.{css,sass,scss,less,gif,png,jpg,jpeg,svg,gql,graphql,yml,yaml}$'; // Pattern to find all custom TypeScript paths
+ 

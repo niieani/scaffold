@@ -6,6 +6,10 @@ import {ignore} from './shared/ignore'
 const config: ESLintConfig = {
   ...beemoConfig,
   ignore,
+  extends: [
+    'plugin:import/typescript',
+    ...(Array.isArray(beemoConfig.extends) ? beemoConfig.extends : []),
+  ],
   plugins: ['eslint-comments'],
   overrides: [
     {
@@ -13,6 +17,9 @@ const config: ESLintConfig = {
       files: TESTS_LIST,
       rules: {
         '@typescript-eslint/ban-ts-ignore': 'off',
+        'import/no-extraneous-dependencies': ['error', {devDependencies: true}],
+        // does not apply to test files, as they're not publishable anyway
+        'node/no-unpublished-import': 'off',
       },
     },
   ],
