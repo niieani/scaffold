@@ -1344,7 +1344,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/config-constants@1.0.2, @beemo/config-constants@npm:^1.0.2":
+"@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A1.0.2#./patches/@beemo+config-constants.patch::locator=eslint-config-niieani%40workspace%3Apackages%2Feslint-config":
+  version: 1.0.2
+  resolution: "@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A1.0.2#./patches/@beemo+config-constants.patch::version=1.0.2&hash=e1eca2&locator=eslint-config-niieani%40workspace%3Apackages%2Feslint-config"
+  checksum: cbf8478293c2c7cacc7a1c2ef047e10babccb97fb9dd8cefe9abf9709ae9b8d251325a1a4231d3270eec305be3e245d1f2ccbf86f44eb29e77e9c07c557eb6cc
+  languageName: node
+  linkType: hard
+
+"@beemo/config-constants@1.0.2, @beemo/config-constants@npm:1.0.2, @beemo/config-constants@npm:^1.0.2":
   version: 1.0.2
   resolution: "@beemo/config-constants@npm:1.0.2"
   checksum: fadfe9c73dd54f83409cbe471aef599294e873b9b4d5717cd126e02f662da31c566f1dcbf6e53a0ad69b880cf0d0f416c330012688ecf5725e8ebdfd9cd31ae0
@@ -2167,7 +2174,7 @@ __metadata:
   resolution: "@niieani/scaffold-monorepo@workspace:."
   dependencies:
     "@niieani/scaffold": "workspace:*"
-    "@yarnpkg/core": ^3.1.0-rc.4
+    "@yarnpkg/core": ^3.1.0-rc.5
   languageName: unknown
   linkType: soft
 
@@ -2202,6 +2209,7 @@ __metadata:
     "@vitejs/plugin-react-refresh": ^1.3.6
     commitlint: ^13.1.0
     eslint: ^7.32.0
+    eslint-config-niieani: "workspace:*"
     eslint-plugin-eslint-comments: ^3.2.0
     husky: ^7.0.2
     jest: ^27.1.1
@@ -3490,19 +3498,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^3.1.0-rc.4":
-  version: 3.1.0-rc.4
-  resolution: "@yarnpkg/core@npm:3.1.0-rc.4"
+"@yarnpkg/core@npm:^3.1.0-rc.5":
+  version: 3.1.0-rc.5
+  resolution: "@yarnpkg/core@npm:3.1.0-rc.5"
   dependencies:
     "@arcanis/slice-ansi": ^1.0.2
     "@types/semver": ^7.1.0
     "@types/treeify": ^1.0.0
-    "@yarnpkg/fslib": ^2.6.0-rc.3
+    "@yarnpkg/fslib": ^2.6.0-rc.4
     "@yarnpkg/json-proxy": ^2.1.1
     "@yarnpkg/libzip": ^2.2.2
-    "@yarnpkg/parsers": ^2.4.1-rc.3
-    "@yarnpkg/pnp": ^3.0.1-rc.3
-    "@yarnpkg/shell": ^3.0.1-rc.5
+    "@yarnpkg/parsers": ^2.4.1-rc.4
+    "@yarnpkg/pnp": ^3.1.0-rc.1
+    "@yarnpkg/shell": ^3.1.0-rc.1
     camelcase: ^5.3.1
     chalk: ^3.0.0
     ci-info: ^2.0.0
@@ -3526,11 +3534,11 @@ __metadata:
     treeify: ^1.1.0
     tslib: ^1.13.0
     tunnel: ^0.0.6
-  checksum: 83d8e599a7753cd9f0976326ef7aca7cffffe969127fa75c68ace7822a7bc1db5f9462b88027ebabe431e3b49eff090ae9a0fcb27db7197ac1cd964013857f61
+  checksum: 23c6d71440fa5c699aefb770dcd432a88ed5ce818802d6a47e74893816fb22d04d34cf3514d0e36ff5ce1c4690438733085e9bcd0d98b77b5af1ce2573bf4326
   languageName: node
   linkType: hard
 
-"@yarnpkg/fslib@npm:^2.5.0, @yarnpkg/fslib@npm:^2.5.2":
+"@yarnpkg/fslib@npm:^2.5.0":
   version: 2.5.2
   resolution: "@yarnpkg/fslib@npm:2.5.2"
   dependencies:
@@ -3540,13 +3548,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/fslib@npm:^2.6.0-rc.3":
-  version: 2.6.0-rc.3
-  resolution: "@yarnpkg/fslib@npm:2.6.0-rc.3"
+"@yarnpkg/fslib@npm:^2.6.0-rc.4":
+  version: 2.6.0-rc.4
+  resolution: "@yarnpkg/fslib@npm:2.6.0-rc.4"
   dependencies:
     "@yarnpkg/libzip": ^2.2.2
     tslib: ^1.13.0
-  checksum: 76aabbfc5a0c9c3cd57530b9254ca07fca71e70ffe4613d34208a218d38c991cd4cc2ad70ebb96f40f6d7c2c004c7727e53b72330f8ee688ab9df378c1b082ff
+  checksum: cf5396724a6d03c11b2e88def6bd99d4228e2a340392fbcd77fa30b9e877c308c9f0da0323cacd6b20ea035b9d525ac12015efd971ad13a061e4ecde80e57e3f
   languageName: node
   linkType: hard
 
@@ -3570,34 +3578,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/parsers@npm:^2.4.1-rc.3":
-  version: 2.4.1-rc.3
-  resolution: "@yarnpkg/parsers@npm:2.4.1-rc.3"
+"@yarnpkg/parsers@npm:^2.4.1-rc.4":
+  version: 2.4.1-rc.4
+  resolution: "@yarnpkg/parsers@npm:2.4.1-rc.4"
   dependencies:
     js-yaml: ^3.10.0
     tslib: ^1.13.0
-  checksum: 65317ecfe7c619c88a5c21519046e7532a18d967cc1e3b60697946ee3dda649f325e9d212728d687b56b0f6e7c2d67898de2e1b1865fc40f2f94fac8fed99c1a
+  checksum: e2064015f3a2665f7c5169b71ccb5f8bf6b48964602f4cdcaf9f90a397f93990a7b83eceddaeae540d01c7458d08b7645ffe2e92fd680e9f7faed494e3939e79
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnp@npm:^3.0.1-rc.3":
-  version: 3.0.2
-  resolution: "@yarnpkg/pnp@npm:3.0.2"
+"@yarnpkg/pnp@npm:^3.1.0-rc.1":
+  version: 3.1.0-rc.1
+  resolution: "@yarnpkg/pnp@npm:3.1.0-rc.1"
   dependencies:
     "@types/node": ^13.7.0
-    "@yarnpkg/fslib": ^2.5.2
+    "@yarnpkg/fslib": ^2.6.0-rc.4
     resolve.exports: ^1.0.2
     tslib: ^1.13.0
-  checksum: c9b1aefb4269f29ab7d4476fc4deceb919f7b4a3b58c0c8f6e3bae68db8eaef52253080e365ec1dc30e2fd7744e678c78e58bba710cf5041157f28d16cbdb948
+  checksum: 8b31948d269ea499ba2da11f3a666d51033feefae79626836920fec07b4ed3d5cdec3bc5be27d1ac7b4ba921e34e84af31008c27921b856c51786680a38df08d
   languageName: node
   linkType: hard
 
-"@yarnpkg/shell@npm:^3.0.1-rc.5":
-  version: 3.0.1-rc.5
-  resolution: "@yarnpkg/shell@npm:3.0.1-rc.5"
+"@yarnpkg/shell@npm:^3.1.0-rc.1":
+  version: 3.1.0-rc.1
+  resolution: "@yarnpkg/shell@npm:3.1.0-rc.1"
   dependencies:
-    "@yarnpkg/fslib": ^2.6.0-rc.3
-    "@yarnpkg/parsers": ^2.4.1-rc.3
+    "@yarnpkg/fslib": ^2.6.0-rc.4
+    "@yarnpkg/parsers": ^2.4.1-rc.4
     chalk: ^3.0.0
     clipanion: ^3.0.1
     cross-spawn: 7.0.3
@@ -3607,7 +3615,7 @@ __metadata:
     tslib: ^1.13.0
   bin:
     shell: ./lib/cli.js
-  checksum: b2d69181cf03a37a46d95896d9cad8e1381fa489e6c721f0ed4733e28a4fc4bcd8c0004cb3b354594c902aa30118fc2b6c602f3ccd7ead315b77d97c8f80f067
+  checksum: e13777e70a325cac2f095cf4ba71b2beb33a1252801cb15f62ed0302da70aa24ba283738da1c76248d93da2f4c0f67f270120529a59405d5d9e4df7e77c9e20f
   languageName: node
   linkType: hard
 
@@ -5681,6 +5689,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-niieani@workspace:*, eslint-config-niieani@workspace:packages/eslint-config":
+  version: 0.0.0-use.local
+  resolution: "eslint-config-niieani@workspace:packages/eslint-config"
+  dependencies:
+    "@beemo/config-constants-patched": "patch:@beemo/config-constants@npm%3A1.0.2#./patches/@beemo+config-constants.patch"
+    "@niieani/scaffold": "workspace:*"
+    "@types/eslint": ^7.28.0
+    "@typescript-eslint/eslint-plugin": ^4.31.0
+    "@typescript-eslint/parser": ^4.31.0
+    eslint: ^7.32.0
+    eslint-config-airbnb-base: ^14.2.1
+    eslint-config-prettier: ^8.3.0
+    eslint-plugin-compat: ^3.13.0
+    eslint-plugin-import: ^2.24.2
+    eslint-plugin-jest: ^24.4.0
+    eslint-plugin-jsx-a11y: ^6.4.1
+    eslint-plugin-node: ^11.1.0
+    eslint-plugin-promise: ^5.1.0
+    eslint-plugin-react: ^7.25.1
+    eslint-plugin-react-hooks: ^4.2.0
+    eslint-plugin-react-perf: ^3.3.0
+    eslint-plugin-simple-import-sort: ^7.0.0
+    eslint-plugin-unicorn: ^36.0.0
+  peerDependencies:
+    eslint: ">=7.0.0"
+  languageName: unknown
+  linkType: soft
+
 "eslint-config-prettier@npm:^8.3.0":
   version: 8.3.0
   resolution: "eslint-config-prettier@npm:8.3.0"
@@ -5909,6 +5945,28 @@ __metadata:
   peerDependencies:
     eslint: ">=7.28.0"
   checksum: d7ba6f5b80a527f0a2c16572922b325009418086a53cdfcbcca711c1f4f863e4eae8692b046c10e6213beeee208f880f88b140806207a68a7d04cf8680677d19
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-unicorn@npm:^36.0.0":
+  version: 36.0.0
+  resolution: "eslint-plugin-unicorn@npm:36.0.0"
+  dependencies:
+    "@babel/helper-validator-identifier": ^7.14.9
+    ci-info: ^3.2.0
+    clean-regexp: ^1.0.0
+    eslint-template-visitor: ^2.3.2
+    eslint-utils: ^3.0.0
+    is-builtin-module: ^3.1.0
+    lodash: ^4.17.21
+    pluralize: ^8.0.0
+    read-pkg-up: ^7.0.1
+    regexp-tree: ^0.1.23
+    safe-regex: ^2.1.1
+    semver: ^7.3.5
+  peerDependencies:
+    eslint: ">=7.32.0"
+  checksum: 8c1051036b65509228639bdf7eafaa034982985071a817a3b275f58b68ad525e8741eca2ba0a2b56cd8b5e82b9a8911bd1f65456659cdef267e9e230d2edd1e3
   languageName: node
   linkType: hard
 

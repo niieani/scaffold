@@ -26,7 +26,8 @@
     "test:code": "beemo jest",
     "test:types": "yarn foreach-run tsc --noEmit",
     "test:format": "yarn foreach-run prettier --check \"./{src,tests}/**/!(*.d).{.js,jsx,ts,tsx,json,md}\"",
-    "build": "yarn foreach-run tsc --emitDeclarationOnly",
+    "build:eslint-config": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspace eslint-config-niieani run build",
+    "build": "yarn foreach-run tsc --emitDeclarationOnly && yarn build:eslint-config",
     "clean": "git clean -dfX --exclude=node_modules packages && beemo typescript:sync-project-refs"
   },
   "prettier": {
@@ -39,7 +40,7 @@
   },
   "devDependencies": {
     "@niieani/scaffold": "workspace:*",
-    "@yarnpkg/core": "^3.1.0-rc.4"
+    "@yarnpkg/core": "^3.1.0-rc.5"
   },
   "publishConfig": {
     "access": "public"

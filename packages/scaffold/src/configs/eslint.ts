@@ -8,7 +8,9 @@ const config: ESLintConfig = {
   ignore,
   extends: [
     'plugin:import/typescript',
-    ...(Array.isArray(beemoConfig.extends) ? beemoConfig.extends : []),
+    ...(Array.isArray(beemoConfig.extends)
+      ? beemoConfig.extends.map((value) => value.replace('beemo', 'niieani'))
+      : []),
   ],
   plugins: ['eslint-comments'],
   overrides: [
