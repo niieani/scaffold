@@ -1346,8 +1346,8 @@ __metadata:
 
 "@beemo/config-constants@patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch::locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold":
   version: 1.0.2
-  resolution: "@beemo/config-constants@patch:@beemo/config-constants@npm%3A1.0.2#./patches/@beemo+config-constants.patch::version=1.0.2&hash=abed25&locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold"
-  checksum: 46a82529ba7b8dc1e708df90d641d0117ffeb56c055ab98717d0184caa52b80216f9e8cbd770ad4f4e2288540e7efcd20e5159dadf7944186f9ad37f8108b141
+  resolution: "@beemo/config-constants@patch:@beemo/config-constants@npm%3A1.0.2#./patches/@beemo+config-constants.patch::version=1.0.2&hash=e1eca2&locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold"
+  checksum: 28b66ac84545f40fe438c89457fb193c8a6e184ba5a620e43b6ac2e1dce6cdc049e8e8b7b94c9596f49723d136081d2705b020b15d2725b630ea59f02dd86712
   languageName: node
   linkType: hard
 
