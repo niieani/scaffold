@@ -17,6 +17,10 @@ to: .vscode/settings.json
     "**/.yarn": true,
     "**/.pnp.*": true,
     "**/dist": true,
+    "**/cjs": true,
+    "**/esm": true,
+    "**/lib": true,
+    "**/node_modules": true,
   },
   "files.exclude": {
     // hide generated files:
@@ -28,6 +32,8 @@ to: .vscode/settings.json
     "babel.config.js": true,
     "jest.config.js": true,
     "prettier.config.js": true,
+    "**/{src,tests}/**/*.d.ts": true,
+    "**/{src,tests}/**/*.map": true,
     // defaults:
     "**/.git": true,
     "**/.svn": true,

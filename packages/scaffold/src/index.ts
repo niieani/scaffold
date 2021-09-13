@@ -51,7 +51,7 @@ export default async function bootstrap(tool: Tool) {
       {tool},
     )
   }
-  if (tool.driverRegistry.isRegistered('typescript') && noCompile) {
+  if (tool.driverRegistry.isRegistered('typescript')) {
     const tsDriver: TypeScriptDriver = tool.driverRegistry.get('typescript')
     tsDriver.onCreateProjectConfigFile.listen((_configPath, packageConfig) => {
       if (!packageConfig.compilerOptions) return
@@ -60,8 +60,10 @@ export default async function bootstrap(tool: Tool) {
       delete packageConfig.compilerOptions.declarationDir
       // eslint-disable-next-line no-param-reassign
       delete packageConfig.compilerOptions.outDir
-      // eslint-disable-next-line no-param-reassign
-      packageConfig.compilerOptions.sourceMap = false
+      if (noCompile) {
+        // eslint-disable-next-line no-param-reassign
+        packageConfig.compilerOptions.sourceMap = false
+      }
       // packageConfig.exclude?.push('node_modules')
       // packageConfig.exclude?.shift()
     })
