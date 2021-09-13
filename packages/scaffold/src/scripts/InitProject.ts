@@ -163,7 +163,7 @@ class InitProjectScript extends Script<Options> {
         url: `https://github.com/${gitScope}/${nameWithoutScope}/issues`,
       },
     }
-    const prettierRange = './{src,tests}/**/*[!.d].{.js,jsx,ts,tsx,json,md}'
+    const prettierRange = './{src,tests}/**/!(*.d).{.js,jsx,ts,tsx,json,md}'
     const runCommand = monorepo ? 'foreach-run' : 'rrun'
 
     const updatedPackageJson: PackageStructureWithMeta = {
