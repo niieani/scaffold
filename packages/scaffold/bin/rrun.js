@@ -13,7 +13,7 @@ try {
   }
   const fs = require('fs')
   const bin = fs.readFileSync(resolved).toString()
-  // this is just yarn's temp redirect :(
+  // this is just yarn's BS temp redirect :( see https://github.com/yarnpkg/berry/blob/a4e208e228a416d70c57faaf2c1a7b9754985e56/packages/yarnpkg-core/sources/scriptUtils.ts#L42-L44
   if (bin.startsWith('#!/bin/sh')) {
     const [, right] = bin.split(`node" '`)
     const [actualBin] = right.split(`' "$@"`)

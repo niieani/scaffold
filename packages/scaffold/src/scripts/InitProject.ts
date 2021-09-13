@@ -153,6 +153,7 @@ class InitProjectScript extends Script<Options> {
     const commonPackageInfo = {
       author:
         packageJson.author ??
+        // TODO: use values from git config
         'Bazyli Brzoska <npm@invent.life> (https://invent.life)',
       repository: packageJson.repository ?? {
         type: 'git',

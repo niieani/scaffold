@@ -12,14 +12,20 @@ yarn add @niieani/scaffold --dev
 Setup your `.config/beemo.ts`, for example:
 
 ```ts
-import type {BeemoConfig} from '@beemo/core'
+import type {ScaffoldConfig} from '@niieani/scaffold'
 
-const config: BeemoConfig = {
+const config: ScaffoldConfig = {
   module: '@niieani/scaffold',
   drivers: ['babel', 'eslint', 'jest', 'prettier', 'typescript', 'webpack'],
   settings: {
-    // for vite:
-    vite: true,
+    node: true,
+    name: 'MyProject',
+    engineTarget: 'web',
+    codeTarget: 'es6',
+    umd: {
+      filename: 'myproject.js',
+      export: 'default',
+    },
   },
 }
 
