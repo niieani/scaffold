@@ -24,7 +24,7 @@
   "author": "Bazyli Brzóska",
   "engines": {
     "node": ">=12.17.0",
-    "npm": ">=6.13.0"
+    "npm": ">=6.13.7"
   },
   "scripts": {
     "build": "rrun tsc --outDir lib --module commonjs",
