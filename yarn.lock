@@ -1319,13 +1319,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/cli@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@beemo/cli@npm:2.0.1"
+"@beemo/cli@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@beemo/cli@npm:2.0.2"
   dependencies:
-    "@boost/cli": ^2.11.1
-    "@boost/common": ^2.8.1
-    "@boost/pipeline": ^2.2.7
+    "@boost/cli": ^2.11.2
+    "@boost/common": ^2.8.2
+    "@boost/pipeline": ^2.2.8
     debug: ^4.3.2
     ink: ^3.0.9
     react: ^16.14.0
@@ -1333,7 +1333,7 @@ __metadata:
     "@beemo/core": ^2.0.0
   bin:
     beemo: lib/bin.js
-  checksum: 0797ce8f3a164380d539f9b7921d4afcd0f52782b4c9c4b8bf5f44d0d2eb86d940261d0a8b963750d1fb66f97cbbfd96362d10baa9447303ac9d17f88ab9fa09
+  checksum: 9ef6aeafcae5b6e2f63883e96fab35c40826f0860bac811b4c7d3aa536da6c41b663fd23472444df32c92b14ff70ba73109458fa083970d039101ba9bda6df8c
   languageName: node
   linkType: hard
 
@@ -1494,7 +1494,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/cli@npm:^2.11.1":
+"@boost/cli@npm:^2.11.2":
   version: 2.11.2
   resolution: "@boost/cli@npm:2.11.2"
   dependencies:
@@ -1611,7 +1611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/pipeline@npm:^2.2.7":
+"@boost/pipeline@npm:^2.2.7, @boost/pipeline@npm:^2.2.8":
   version: 2.2.8
   resolution: "@boost/pipeline@npm:2.2.8"
   dependencies:
@@ -2184,7 +2184,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.15.5
     "@babel/preset-env": ^7.15.6
-    "@beemo/cli": ^2.0.1
+    "@beemo/cli": ^2.0.2
     "@beemo/config-constants": ^1.0.2
     "@beemo/config-constants-patched": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch"
     "@beemo/config-eslint": ^1.0.10
