@@ -9,6 +9,10 @@ const typedJestPreset = jestPreset as unknown as JestConfig
 const config: JestConfig = {
   ...omit(typedJestPreset, ['testMatch']),
   ...omit(beemoJestConfig, ['preset']),
+  testMatch: [
+    '<rootDir>/packages/*/src/**/*.test.{ts,tsx}',
+    '<rootDir>/src/**/*.test.{ts,tsx}',
+  ],
   setupFilesAfterEnv: [
     /* '<rootDir>/tests/setup.ts' */
   ],
