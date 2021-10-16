@@ -187,10 +187,10 @@ class InitProjectScript extends Script<Options> {
         prepare: `rrun husky install ${huskyHooksDir} && beemo create-config${
           monorepo ? ' && beemo typescript:sync-project-refs' : ''
         }`,
-        format: `yarn ${runCommand} prettier --write "./{src,tests}/**/*.{js,json,md}"`,
+        format: `yarn ${runCommand} prettier --write "${prettierRange}"`,
         ...(monorepo
           ? {
-              [runCommand]: `PATH="$PWD/node_modules/.bin:$PATH" yarn workspaces foreach --verbose run rrun`,
+              [runCommand]: `PATH="$PWD/node_modules/.bin:$PATH" yarn workspaces foreach --parallel --interlaced --topological --topological-dev --verbose run rrun`,
             }
           : {}),
         ...(vite
