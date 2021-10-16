@@ -1,7 +1,5 @@
-import {
-  IGNORE_LIST,
-  IGNORE_LIST as IGNORE_LIST_PATCHED,
-} from '@beemo/config-constants-patched'
+import {IGNORE_LIST} from '@beemo/config-constants'
+import {IGNORE_LIST as IGNORE_LIST_PATCHED} from '@beemo/config-constants-patched'
 import type {BeemoConfig, ConfigObject, Path, Tool} from '@beemo/core'
 import {CreateConfigRoutine} from '@beemo/core/lib/routines/CreateConfigRoutine'
 import type {TypeScriptDriver} from '@beemo/driver-typescript'
