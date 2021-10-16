@@ -2,7 +2,7 @@
 - [ ] for this one use declarations only emit (since TS is compiled)
 - [ ] also emit declarations to 'src'
 - [ ] gitignore `src/**/*.d.ts`
-- [ ] rename from beemo-build-tools to scaffold
+- [x] rename from beemo-build-tools to scaffold
 - [ ] add build: false for projects that don't need building
 - [ ] add .vscode/extensions.json (see below)
 - [ ] typescript should have 2 configs that have different excludes (for test files, and for src), and then use them accordingly
