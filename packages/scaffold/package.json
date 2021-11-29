@@ -25,7 +25,7 @@
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
-    "@beemo/cli": "^2.0.2",
+    "@beemo/cli": "^2.0.4",
     "@beemo/config-constants": "^1.0.2",
     "@beemo/config-constants-patched": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch",
     "@beemo/config-eslint": "^1.0.10",
