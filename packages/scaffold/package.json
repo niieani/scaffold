@@ -28,7 +28,7 @@
     "@beemo/cli": "^2.0.4",
     "@beemo/config-constants": "^1.0.2",
     "@beemo/config-constants-patched": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch",
-    "@beemo/config-eslint": "^1.0.13",
+    "@beemo/config-eslint": "^1.1.2",
     "@beemo/config-jest": "^1.1.4",
     "@beemo/core": "^2.0.2",
     "@beemo/driver-babel": "^2.0.1",
