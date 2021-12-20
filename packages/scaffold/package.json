@@ -63,7 +63,7 @@
     "zx": "^4.2.0"
   },
   "devDependencies": {
-    "@types/babel__core": "^7.1.16",
+    "@types/babel__core": "^7.1.17",
     "@types/babel__preset-env": "^7.9.2",
     "@types/eslint": "^7.28.2",
     "@types/lodash": "^4.14.177",
