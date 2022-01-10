@@ -1761,15 +1761,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-babel@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@beemo/driver-babel@npm:2.0.1"
+"@beemo/driver-babel@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@beemo/driver-babel@npm:2.0.5"
   dependencies:
     rimraf: ^3.0.2
   peerDependencies:
     "@babel/core": ^7.0.0
     "@beemo/core": ^2.0.0
-  checksum: dd37600afc3c9a9e8f679ccb3f270fa1f111bddb4c4e86486d5c84eba24627d2238c1be22b997dee3188af2ce592c0227534179dfdcadcc3a8fb1f4d0d121415
+  checksum: f86d684e47d2b07831e1e729de04d51025eff29d5c55261783f260e841d4f4b9ea8604dd68ec7f0c0707de7052c7a6a5a215c61f8b431139b17ff972d66f0133
   languageName: node
   linkType: hard
 
@@ -2793,7 +2793,7 @@ __metadata:
     "@beemo/config-eslint": ^1.1.2
     "@beemo/config-jest": ^1.1.5
     "@beemo/core": ^2.0.2
-    "@beemo/driver-babel": ^2.0.1
+    "@beemo/driver-babel": ^2.0.5
     "@beemo/driver-eslint": ^2.0.1
     "@beemo/driver-jest": ^2.0.0
     "@beemo/driver-prettier": ^2.0.1
