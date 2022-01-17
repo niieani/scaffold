@@ -24,7 +24,7 @@
   "sideEffects": false,
   "dependencies": {
     "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
     "@beemo/cli": "^2.0.5",
     "@beemo/config-constants": "^1.0.2",
     "@beemo/config-constants-patched": "patch:@beemo/config-constants@1.0.2#./patches/@beemo+config-constants.patch",
