@@ -1773,16 +1773,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-eslint@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@beemo/driver-eslint@npm:2.0.1"
+"@beemo/driver-eslint@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@beemo/driver-eslint@npm:2.0.4"
   dependencies:
-    "@boost/event": ^2.3.3
-    "@types/eslint": ^7.28.0
+    "@boost/event": ^3.0.0
+    "@types/eslint": ^8.2.1
   peerDependencies:
     "@beemo/core": ^2.0.0
-    eslint: ^7.0.0
-  checksum: d6babf6a026755f38bf1913649d61b176ef56223547f3aefda1393be29e2047fe6f32ee608d388e13975c13a73b3033de0aa4bb33980b31735b1b2858a6f1aeb
+    eslint: ^7.0.0 || ^8.0.0
+  checksum: b2ac05eb7c96a5b07768d7c95be3d1ebe6dcde8ef0a22fc0bbdce414ad5f5ab27d7275384e3c512c7f9daa65b628021976d9355f30ec8a0ee525b7702fbfaf47
   languageName: node
   linkType: hard
 
@@ -2794,7 +2794,7 @@ __metadata:
     "@beemo/config-jest": ^1.1.5
     "@beemo/core": ^2.0.2
     "@beemo/driver-babel": ^2.0.5
-    "@beemo/driver-eslint": ^2.0.1
+    "@beemo/driver-eslint": ^2.0.4
     "@beemo/driver-jest": ^2.0.0
     "@beemo/driver-prettier": ^2.0.1
     "@beemo/driver-typescript": ^2.0.0
@@ -3459,7 +3459,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^7.28.0":
+"@types/eslint@npm:*":
   version: 7.28.0
   resolution: "@types/eslint@npm:7.28.0"
   dependencies:
@@ -3476,6 +3476,16 @@ __metadata:
     "@types/estree": "*"
     "@types/json-schema": "*"
   checksum: d177f3eec22971baeef8f244693687ee4c0357125f4a8fb7e614b83e36b98318a0b1a13b31230199d2a91af54122b67883faa7b4d2c29f0c83e2650f6b0d4d9c
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:^8.2.1":
+  version: 8.2.2
+  resolution: "@types/eslint@npm:8.2.2"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: acbbaecea2675b63cc4b067df499bb15906a56379a3603a9f6afffe2eb688b30bb73b1f5a402e44de36c5dc76abf59027a9f557b171d0b544ad01fa333118b6b
   languageName: node
   linkType: hard
 
