@@ -1903,15 +1903,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-jest@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@beemo/driver-jest@npm:2.0.0"
+"@beemo/driver-jest@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@beemo/driver-jest@npm:2.0.4"
   dependencies:
-    "@jest/types": ^27.0.6
+    "@jest/types": ^27.4.2
   peerDependencies:
     "@beemo/core": ^2.0.0
     jest: ^26.0.0 || ^27.0.0
-  checksum: f25ee47f0ef1df881601859d84a50479f04773f18bf16ee4d1759abffeb39c4ddf62759356933654a1b0743a9c1ef5523c9d452872a7c0580ebfe33fa2e3cdf9
+  checksum: 821f09bf1ab4e8694cc2ae1beff1c88c3dcb93ba4f888845cdd0ae984959877ff37484ab04d379cc95bc71aca4c7560ab764ee7531b3d761afdda1e63e26acb0
   languageName: node
   linkType: hard
 
@@ -2808,7 +2808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/types@npm:^27.0.6, @jest/types@npm:^27.1.0":
+"@jest/types@npm:^27.1.0":
   version: 27.1.0
   resolution: "@jest/types@npm:27.1.0"
   dependencies:
@@ -2912,7 +2912,7 @@ __metadata:
     "@beemo/core": ^2.0.2
     "@beemo/driver-babel": ^2.0.5
     "@beemo/driver-eslint": ^2.0.4
-    "@beemo/driver-jest": ^2.0.0
+    "@beemo/driver-jest": ^2.0.4
     "@beemo/driver-prettier": ^2.0.1
     "@beemo/driver-typescript": ^2.0.0
     "@beemo/driver-webpack": ^2.0.1
