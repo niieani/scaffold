@@ -1915,16 +1915,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-prettier@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@beemo/driver-prettier@npm:2.0.1"
+"@beemo/driver-prettier@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@beemo/driver-prettier@npm:2.0.5"
   dependencies:
-    "@boost/event": ^2.3.3
-    "@types/prettier": ^2.3.2
+    "@boost/event": ^3.0.0
+    "@types/prettier": ^2.4.2
   peerDependencies:
     "@beemo/core": ^2.0.0
     prettier: ^2.0.0
-  checksum: 72cedeea8f57135f122d4d4d5a25a972900cf91b0d78e34a9a4417cf16bb94f9836f6348add225901cea33c96f0260d7afbf411bce9631aaaa0841a3c94bc80e
+  checksum: 56e3f76b82272f8603c4582e1eafba68e0efd2ef483c0801b88dfc8522313e38e691708e06fee97cf729d69b74617fd2a4cd1a713ef2c43fc3d2de1dfe76f4fe
   languageName: node
   linkType: hard
 
@@ -2913,7 +2913,7 @@ __metadata:
     "@beemo/driver-babel": ^2.0.5
     "@beemo/driver-eslint": ^2.0.4
     "@beemo/driver-jest": ^2.0.4
-    "@beemo/driver-prettier": ^2.0.1
+    "@beemo/driver-prettier": ^2.0.5
     "@beemo/driver-typescript": ^2.0.0
     "@beemo/driver-webpack": ^2.0.1
     "@boost/module": ^2.0.0
@@ -3807,6 +3807,13 @@ __metadata:
   version: 2.3.2
   resolution: "@types/prettier@npm:2.3.2"
   checksum: c4313e16650811f47b07a0fa7ac0742e966f61283a7292eb667fd4626d760bf3b7d896be3eaabb3354ad45fdbe3a340299b018dd3bcce1ff753d030a8cd2479c
+  languageName: node
+  linkType: hard
+
+"@types/prettier@npm:^2.4.2":
+  version: 2.4.3
+  resolution: "@types/prettier@npm:2.4.3"
+  checksum: b240434daabac54700c862b0bb52a83fec396e0e9c847447119ba41fd8404d79aadfa174e6306fb094b29efadac586344b7606c3a71c286b71755ab2579d54df
   languageName: node
   linkType: hard
 
