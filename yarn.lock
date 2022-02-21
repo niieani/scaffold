@@ -1928,7 +1928,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-typescript@npm:^2.0.1":
+"@beemo/driver-typescript@npm:^2.1.1":
   version: 2.1.1
   resolution: "@beemo/driver-typescript@npm:2.1.1"
   dependencies:
@@ -2934,7 +2934,7 @@ __metadata:
     "@beemo/driver-eslint": ^2.0.4
     "@beemo/driver-jest": ^2.0.4
     "@beemo/driver-prettier": ^2.0.5
-    "@beemo/driver-typescript": ^2.0.1
+    "@beemo/driver-typescript": ^2.1.1
     "@beemo/driver-webpack": ^2.0.5
     "@boost/module": ^2.0.0
     "@commitlint/config-conventional": ^13.1.0
