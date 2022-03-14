@@ -1903,15 +1903,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-jest@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@beemo/driver-jest@npm:2.0.4"
+"@beemo/driver-jest@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@beemo/driver-jest@npm:2.0.5"
   dependencies:
-    "@jest/types": ^27.4.2
+    "@jest/types": ^27.5.1
   peerDependencies:
     "@beemo/core": ^2.0.0
     jest: ^26.0.0 || ^27.0.0
-  checksum: 821f09bf1ab4e8694cc2ae1beff1c88c3dcb93ba4f888845cdd0ae984959877ff37484ab04d379cc95bc71aca4c7560ab764ee7531b3d761afdda1e63e26acb0
+  checksum: 60ecf57392d0b47bfe4ef4834c5d39d38c4cd1c2defdad2d10f33bd73f3a2adb8347e8fcb38acf20601596ffd994d3eee4e2b809b65aee5c15a14176f948b8d4
   languageName: node
   linkType: hard
 
@@ -2852,19 +2852,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/types@npm:^27.4.2":
-  version: 27.4.2
-  resolution: "@jest/types@npm:27.4.2"
-  dependencies:
-    "@types/istanbul-lib-coverage": ^2.0.0
-    "@types/istanbul-reports": ^3.0.0
-    "@types/node": "*"
-    "@types/yargs": ^16.0.0
-    chalk: ^4.0.0
-  checksum: 1191022023e32763063cc1c8b1143fa316fb05db2f9698280a7bdbafcabd989e5fd64f8eb875b8a2e54c53f25dba45ed2eea8ced394d9e484da0fda674cd17a5
-  languageName: node
-  linkType: hard
-
 "@jest/types@npm:^27.5.1":
   version: 27.5.1
   resolution: "@jest/types@npm:27.5.1"
@@ -2950,7 +2937,7 @@ __metadata:
     "@beemo/core": ^2.0.2
     "@beemo/driver-babel": ^2.0.6
     "@beemo/driver-eslint": ^2.0.5
-    "@beemo/driver-jest": ^2.0.4
+    "@beemo/driver-jest": ^2.0.5
     "@beemo/driver-prettier": ^2.0.5
     "@beemo/driver-typescript": ^2.1.1
     "@beemo/driver-webpack": ^2.0.5
