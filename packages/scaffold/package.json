@@ -35,7 +35,7 @@
     "@beemo/driver-eslint": "^2.0.5",
     "@beemo/driver-jest": "^2.0.5",
     "@beemo/driver-prettier": "^2.0.6",
-    "@beemo/driver-typescript": "^2.1.1",
+    "@beemo/driver-typescript": "^2.1.2",
     "@beemo/driver-webpack": "^2.0.5",
     "@boost/module": "^2.0.0",
     "@commitlint/config-conventional": "^13.1.0",

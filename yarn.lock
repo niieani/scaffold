@@ -1928,16 +1928,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/driver-typescript@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@beemo/driver-typescript@npm:2.1.1"
+"@beemo/driver-typescript@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@beemo/driver-typescript@npm:2.1.2"
   dependencies:
-    "@boost/event": ^3.0.0
+    "@boost/event": ^3.0.1
     rimraf: ^3.0.2
   peerDependencies:
     "@beemo/core": ^2.0.0
     typescript: ^4.0.0
-  checksum: 5246baaf00afe0b7dab2c77c51db522b7de2fa96825550c018e33024fc17f7ad41c916e4a37c8095eb325be12b4f5ecd882adeb80553b51f2d07095e61d27c9e
+  checksum: 54e6c17f52134307f0d441e4c9d5475a9a39ac6ce0fb7f2e70176868e915b6f6d71b0bf5d9be0c8309ac55ef14728910e93b039be2765b1b7c2c6ce1ee8faa1e
   languageName: node
   linkType: hard
 
@@ -2097,15 +2097,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boost/event@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@boost/event@npm:3.0.0"
-  dependencies:
-    "@boost/internal": ^3.0.0
-  checksum: 36fda219a41af2d3ea7c090978e1905802882617e088b88cfa58ce15b340f67dadc6d8887ed8fa2d777d3e671d58210a62a89fdd2f31a3019b02578264781da2
-  languageName: node
-  linkType: hard
-
 "@boost/event@npm:^3.0.1":
   version: 3.0.1
   resolution: "@boost/event@npm:3.0.1"
@@ -2121,15 +2112,6 @@ __metadata:
   dependencies:
     debug: ^4.3.2
   checksum: f12615c42da617ff02152ae2161ca1d5dd2971b783a8f5f01ec30cef22d41fed23d7fb3396c145864da5483dfa1c253b3494d3f37860da8fd28e37d68f06a24f
-  languageName: node
-  linkType: hard
-
-"@boost/internal@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@boost/internal@npm:3.0.0"
-  dependencies:
-    debug: ^4.3.2
-  checksum: f137ce052aca267142ad24b13e6f350c304be7cc4ed173c672125a18b84a6ae93e47b12cc95b891278ceb101503c2060f7c5b9d06f470f073693a36a62279fc3
   languageName: node
   linkType: hard
 
@@ -2939,7 +2921,7 @@ __metadata:
     "@beemo/driver-eslint": ^2.0.5
     "@beemo/driver-jest": ^2.0.5
     "@beemo/driver-prettier": ^2.0.6
-    "@beemo/driver-typescript": ^2.1.1
+    "@beemo/driver-typescript": ^2.1.2
     "@beemo/driver-webpack": ^2.0.5
     "@boost/module": ^2.0.0
     "@commitlint/config-conventional": ^13.1.0
