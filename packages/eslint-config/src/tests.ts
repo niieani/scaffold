@@ -13,7 +13,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
     // Prefer `it` over `test`
     'jest/consistent-test-it': 'error',
     'jest/require-top-level-describe': 'error',
-    'jest/valid-describe': 'error',
+    'jest/valid-describe-callback': 'error',
     'jest/valid-expect': 'error',
 
     // Ensure we are expecting/asserting correctly
@@ -38,8 +38,6 @@ const jestConfig: eslint.Linter.ConfigOverride = {
     'jest/no-restricted-matchers': 'off',
     'jest/no-test-prefixes': 'error',
     'jest/prefer-hooks-on-top': 'error',
-    'jest/prefer-to-be-null': 'error',
-    'jest/prefer-to-be-undefined': 'error',
     'jest/prefer-to-contain': 'error',
     'jest/prefer-to-have-length': 'error',
     'jest/prefer-todo': 'error',
@@ -113,7 +111,7 @@ const testsConfig: eslint.Linter.ConfigOverride = {
 
 const miscConfig: eslint.Linter.ConfigOverride = {
   files: [
-    '**/{__mocks__,__fixtures__}/**/*',
+    '**/{__mocks__,__fixtures__,__generated__}/**/*',
     '**/{tests,__tests__}/**/{helpers,utils,setup}.{ts,tsx}',
   ],
   rules: {

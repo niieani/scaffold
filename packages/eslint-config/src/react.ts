@@ -1,12 +1,6 @@
-/* eslint-disable no-magic-numbers */
 /* eslint-disable import/no-commonjs,import/no-import-module-exports */
 import type eslint from 'eslint'
-import {
-  CASE_SENSITIVE,
-  getTargetReactVersion,
-} from '@beemo/config-constants-patched'
-
-const reactVersion = getTargetReactVersion()
+import {CASE_SENSITIVE} from '@beemo/config-constants-patched'
 
 const reactConfig: eslint.Linter.ConfigOverride = {
   files: ['*.tsx'],
@@ -46,8 +40,8 @@ const reactConfig: eslint.Linter.ConfigOverride = {
     'react/jsx-wrap-multilines': 'off',
 
     // Support the new JSX runtime when available
-    'react/react-in-jsx-scope': reactVersion > 17 ? 'off' : 'error',
-    'react/jsx-uses-react': reactVersion > 17 ? 'off' : 'error',
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off',
 
     // Align with the DOM instead, avoid "is" prefix
     'react/boolean-prop-naming': 'off',

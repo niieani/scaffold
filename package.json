@@ -19,13 +19,13 @@
     "postinstallDev": "yarn prepare",
     "prepare": "rrun husky install .config/husky && beemo create-config && beemo typescript:sync-project-refs",
     "release": "beemo run-script release",
-    "test": "yarn test:format && yarn test:types && yarn test:lint && yarn test:code",
-    "format": "yarn foreach-run prettier --write \"./{src,tests}/**/!(*.d).{.js,jsx,ts,tsx,json,md}\"",
+    "format": "yarn foreach-run prettier --write \"./{src,tests,.config}/**/!(*.d).{.js,jsx,ts,tsx,json,md}\"",
     "foreach-run": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspaces foreach --verbose run rrun",
+    "test": "yarn test:format && yarn test:types && yarn test:lint && yarn test:code",
     "test:lint": "rrun eslint 'packages/*/src/**'",
     "test:code": "beemo jest",
     "test:types": "yarn foreach-run tsc --noEmit",
-    "test:format": "yarn foreach-run prettier --check \"./{src,tests}/**/!(*.d).{.js,jsx,ts,tsx,json,md}\"",
+    "test:format": "yarn foreach-run prettier --check \"./{src,tests,.config}/**/!(*.d).{.js,jsx,ts,tsx,json,md}\"",
     "build:eslint-config": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspace eslint-config-niieani run build",
     "build": "yarn foreach-run tsc --emitDeclarationOnly && yarn build:eslint-config",
     "clean": "git clean -dfX --exclude=node_modules packages && beemo typescript:sync-project-refs"
@@ -40,12 +40,12 @@
   },
   "devDependencies": {
     "@niieani/scaffold": "workspace:*",
-    "@yarnpkg/core": "^3.1.0"
+    "@yarnpkg/core": "^3.2.2"
   },
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@3.0.2",
+  "packageManager": "yarn@3.2.1",
   "release": {
     "branches": [
       "+([0-9])?(.{+([0-9]),x}).x",

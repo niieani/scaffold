@@ -1,4 +1,4 @@
-import {Blueprint, Driver, Predicates} from '@beemo/core'
+import {Blueprint, Driver, Schemas} from '@beemo/core'
 import type {ViteDriverOptions, ViteMakeConfig} from './types'
 
 export class ViteDriver
@@ -7,11 +7,11 @@ export class ViteDriver
 {
   override readonly name = 'vite'
 
-  override blueprint(preds: Predicates): Blueprint<ViteDriverOptions> {
-    const {string} = preds
+  override blueprint(schemas: Schemas): Blueprint<ViteDriverOptions> {
+    const {string} = schemas
 
     return {
-      ...super.blueprint(preds),
+      ...super.blueprint(schemas),
       module: string(),
     }
   }

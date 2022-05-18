@@ -1,7 +1,7 @@
 import type {UserConfig} from 'vite'
 import type {ViteMakeConfig} from '@niieani/beemo-driver-vite'
 import resolve from '@rollup/plugin-node-resolve'
-import reactRefresh from '@vitejs/plugin-react-refresh'
+import react from '@vitejs/plugin-react'
 // import polyfillNode from 'rollup-plugin-polyfill-node'
 // import GlobalsPolyfills from '@esbuild-plugins/node-globals-polyfill'
 // import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
@@ -21,7 +21,7 @@ export const makeConfig: ViteMakeConfig =
           browser: true,
           preferBuiltins: false,
         }),
-        reactRefresh(),
+        react(),
         ...(overrides.plugins ?? []),
         // polyfillNode(),
         // NodeModulesPolyfillPlugin(),
