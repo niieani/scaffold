@@ -67,9 +67,14 @@ const config: eslint.Linter.Config = {
     'no-magic-numbers': [
       'error',
       {
-        ignore: [-3, -2, -1, 0, 1, 2, 3],
+        ignore: [-3, -2, -1, 0, 1, 2, 3, 10, 100, 1_000, 10_000],
         ignoreArrayIndexes: true,
         enforceConst: true,
+        // if used from @typescript-eslint/no-magic-numbers:
+        // ignoreEnums: true,
+        // ignoreNumericLiteralTypes: true,
+        // ignoreReadonlyClassProperties: true,
+        // ignoreTypeIndexes: true,
       },
     ],
 

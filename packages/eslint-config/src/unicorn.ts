@@ -45,7 +45,10 @@ const config: eslint.Linter.Config = {
     'unicorn/no-new-buffer': 'error',
     'unicorn/no-this-assignment': 'error',
     'unicorn/no-useless-spread': 'error',
-    'unicorn/numeric-separators-style': 'error',
+    'unicorn/numeric-separators-style': [
+      'error',
+      {number: {minimumDigits: 0, groupLength: 3}},
+    ],
     'unicorn/throw-new-error': 'error',
 
     // Ensure todo's are finished
