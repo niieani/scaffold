@@ -229,8 +229,8 @@ class InitProjectScript extends Script<Options> {
           monorepo ? 'packages' : 'src'
         } && beemo typescript:sync-project-refs`,
         'test:lint': monorepo
-          ? `rrun eslint 'packages/*/src/**'`
-          : `rrun eslint 'src/**'`,
+          ? `rrun eslint 'packages/*/src/**/*.{js,jsx,ts,tsx}'`
+          : `rrun eslint 'src/**/*.{js,jsx,ts,tsx}'`,
         'test:code': 'beemo jest',
         'test:types': `yarn ${runCommand} tsc --noEmit`,
         'test:format': `yarn ${runCommand} prettier --check "${prettierRange}"`,

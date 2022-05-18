@@ -99,6 +99,7 @@ const config: eslint.Linter.Config = {
         args: 'none',
         caughtErrors: 'all',
         ignoreRestSiblings: true,
+        varsIgnorePattern: '^_',
       },
     ],
     '@typescript-eslint/no-use-before-define': [
@@ -131,7 +132,7 @@ const config: eslint.Linter.Config = {
 
     // Prefer compact and readable code
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
-    '@typescript-eslint/sort-type-union-intersection-members': 'error',
+    '@typescript-eslint/sort-type-union-intersection-members': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
 
     // Prefer interfaces as extending and composition syntax is much nicer
@@ -179,7 +180,7 @@ const config: eslint.Linter.Config = {
     '@typescript-eslint/consistent-type-imports': 'off',
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/no-dynamic-delete': 'off',
-    '@typescript-eslint/no-implicit-any-catch': 'warn',
+    '@typescript-eslint/no-implicit-any-catch': 'off',
     '@typescript-eslint/no-magic-numbers': 'off',
     '@typescript-eslint/no-require-imports': 'off',
     '@typescript-eslint/no-type-alias': 'off',

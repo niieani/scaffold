@@ -23,8 +23,8 @@ const config: eslint.Linter.Config = {
     // Prefer modern APIs
     'promise/no-native': 'off',
     'promise/avoid-new': 'off',
-    'promise/prefer-await-to-then': 'error',
-    'promise/prefer-await-to-callbacks': 'error',
+    'promise/prefer-await-to-then': 'off',
+    'promise/prefer-await-to-callbacks': 'off',
 
     // Useful for patching old Node.js APIs
     'promise/no-callback-in-promise': 'off',

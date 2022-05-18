@@ -14,17 +14,14 @@ export async function writePackageJson(
   )
 }
 export async function fileExists(projectJsonPath: string) {
-  return (
-    fs
-      .access(
-        projectJsonPath,
-        // eslint-disable-next-line no-bitwise
-        fsBase.constants.F_OK | fsBase.constants.R_OK | fsBase.constants.W_OK,
-      )
-      // eslint-disable-next-line promise/prefer-await-to-then
-      .then(
-        () => true,
-        () => false,
-      )
-  )
+  return fs
+    .access(
+      projectJsonPath,
+      // eslint-disable-next-line no-bitwise
+      fsBase.constants.F_OK | fsBase.constants.R_OK | fsBase.constants.W_OK,
+    )
+    .then(
+      () => true,
+      () => false,
+    )
 }
