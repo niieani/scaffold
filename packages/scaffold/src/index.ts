@@ -35,12 +35,6 @@ export default async function bootstrap(tool: Tool) {
   IGNORE_LIST.length = 0
   IGNORE_LIST.push(...IGNORE_LIST_PATCHED)
 
-  // workaround for https://github.com/beemojs/beemo/issues/146
-  tool.scriptRegistry.onAfterRegister.listen((script) => {
-    // eslint-disable-next-line no-param-reassign
-    script.tool = tool
-  })
-
   const {vite, noCompile} = tool.config.settings as BeemoSettings
   if (vite) {
     await tool.driverRegistry.load(
