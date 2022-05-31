@@ -70,7 +70,7 @@ class InitProjectScript extends Script<Options> {
 
     const packageName = packageJson.name ?? path.basename(process.cwd())
     const nameSplit = packageName.split('/')
-    const gitScope = nameSplit.length > 1 ? nameSplit[0].slice(1) : 'niieani'
+    const gitScope = nameSplit.length > 1 ? nameSplit[0]!.slice(1) : 'niieani'
     const scope = nameSplit.length > 1 ? nameSplit[0] : undefined
     const nameWithoutScope = nameSplit[1] ?? packageName
 

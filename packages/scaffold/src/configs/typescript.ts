@@ -22,6 +22,7 @@ const config: TSConfig = {
     moduleResolution: 'node',
     noImplicitOverride: true,
     noImplicitReturns: true,
+    noUncheckedIndexedAccess: true,
     resolveJsonModule: true,
     skipLibCheck: true,
   },
