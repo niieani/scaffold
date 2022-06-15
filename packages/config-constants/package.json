@@ -12,9 +12,11 @@
   "bugs": {
     "url": "https://github.com/niieani/scaffold/issues"
   },
-  "main": "src/main.ts",
+  "main": "lib/main.js",
+  "types": "lib/main.d.ts",
   "source": "src/main.ts",
   "scripts": {
+    "build": "rrun tsc --outDir lib --module commonjs",
     "rrun": "rrun"
   },
   "sideEffects": false,
