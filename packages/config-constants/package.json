@@ -1,0 +1,24 @@
+{
+  "name": "@niieani/scaffold-config-constants",
+  "author": "Bazyli Brzoska <npm@invent.life> (https://invent.life)",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niieani/scaffold.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niieani/scaffold/issues"
+  },
+  "main": "src/main.ts",
+  "source": "src/main.ts",
+  "scripts": {
+    "rrun": "rrun"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@beemo/config-constants": "^2.2.0"
+  }
+}

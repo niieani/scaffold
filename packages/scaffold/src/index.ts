@@ -1,9 +1,9 @@
 import {IGNORE_LIST} from '@beemo/config-constants'
-import {IGNORE_LIST as IGNORE_LIST_PATCHED} from '@beemo/config-constants-patched'
 import type {BeemoConfig, ConfigObject, Path, Tool} from '@beemo/core'
 import {CreateConfigRoutine} from '@beemo/core/lib/routines/CreateConfigRoutine'
 import type {TypeScriptDriver} from '@beemo/driver-typescript'
 import {requireModule} from '@boost/module'
+import {IGNORE_LIST as IGNORE_LIST_PATCHED} from '@niieani/scaffold-config-constants'
 
 // monkey patch to allow functions to be used as configs
 CreateConfigRoutine.prototype.loadConfigAtPath = function loadConfigAtPath(

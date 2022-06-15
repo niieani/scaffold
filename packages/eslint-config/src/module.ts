@@ -6,7 +6,7 @@ import {
   IGNORE_LIST,
   NON_JS_REGEX,
   TS_PATH_PREFIX_REGEX,
-} from '@beemo/config-constants-patched'
+} from '@niieani/scaffold-config-constants'
 
 const config: eslint.Linter.Config = {
   plugins: ['import', 'simple-import-sort'],

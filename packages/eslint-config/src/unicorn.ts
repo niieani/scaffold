@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
 /* eslint-disable import/no-commonjs,import/no-import-module-exports */
 import type eslint from 'eslint'
-import {getTargetNodeRuntime} from '@beemo/config-constants-patched'
+import {getTargetNodeRuntime} from '@niieani/scaffold-config-constants'
 
 const nodeVersion = getTargetNodeRuntime()
 

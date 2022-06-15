@@ -1,6 +1,6 @@
 /* eslint-disable import/no-commonjs,import/no-import-module-exports */
 import type eslint from 'eslint'
-import {CASE_SENSITIVE} from '@beemo/config-constants-patched'
+import {CASE_SENSITIVE} from '@niieani/scaffold-config-constants'
 
 const reactConfig: eslint.Linter.ConfigOverride = {
   files: ['*.tsx'],

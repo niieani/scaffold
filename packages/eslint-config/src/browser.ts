@@ -1,6 +1,6 @@
 /* eslint-disable import/no-commonjs,import/no-import-module-exports */
 import type eslint from 'eslint'
-import {TESTS_LIST} from '@beemo/config-constants-patched'
+import {TESTS_LIST} from '@niieani/scaffold-config-constants'
 
 const config: eslint.Linter.Config = {
   plugins: ['compat'],

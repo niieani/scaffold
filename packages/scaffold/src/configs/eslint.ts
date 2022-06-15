@@ -1,6 +1,6 @@
-import {TESTS_LIST} from '@beemo/config-constants-patched'
 import beemoConfig from '@beemo/config-eslint'
 import type {ESLintConfig} from '@beemo/driver-eslint'
+import {TESTS_LIST} from '@niieani/scaffold-config-constants'
 import {ignore} from './shared/ignore'
 
 const config: ESLintConfig = {

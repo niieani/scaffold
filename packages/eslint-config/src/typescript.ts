@@ -6,7 +6,7 @@ import {
   getRootProjectReferences,
   ROOT,
   TSCONFIG_JSON_PATH,
-} from '@beemo/config-constants-patched'
+} from '@niieani/scaffold-config-constants'
 
 let project: string[] | string = ''
 

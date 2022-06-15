@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
 /* eslint-disable import/no-commonjs,import/no-import-module-exports */
 import type eslint from 'eslint'
-import {CASE_SENSITIVE} from '@beemo/config-constants-patched'
+import {CASE_SENSITIVE} from '@niieani/scaffold-config-constants'
 
 // The following rules are either overriding Airbnb's defaults,
 // or they are enabling new rules that aren't in Airbnb yet.

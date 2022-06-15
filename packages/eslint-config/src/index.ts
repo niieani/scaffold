@@ -1,6 +1,6 @@
 /* eslint-disable import/no-commonjs,import/no-import-module-exports */
 import type eslint from 'eslint'
-import {ECMA_VERSION} from '@beemo/config-constants-patched'
+import {ECMA_VERSION} from '@niieani/scaffold-config-constants'
 
 const config: eslint.Linter.Config = {
   parser: '@typescript-eslint/parser',

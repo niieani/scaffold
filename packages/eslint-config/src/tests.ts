@@ -1,6 +1,9 @@
 /* eslint-disable import/no-commonjs,import/no-import-module-exports */
 import type eslint from 'eslint'
-import {EXTENSIONS_PATTERN, TESTS_LIST} from '@beemo/config-constants-patched'
+import {
+  EXTENSIONS_PATTERN,
+  TESTS_LIST,
+} from '@niieani/scaffold-config-constants'
 
 const jestConfig: eslint.Linter.ConfigOverride = {
   files: TESTS_LIST,

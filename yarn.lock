@@ -2231,21 +2231,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch::locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold":
-  version: 2.2.0
-  resolution: "@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch::version=2.2.0&hash=ba1d08&locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold"
-  checksum: 900e96749708364025edcbb4497f5df36b1f75e47a7dc5d6744605129ea6ca4917f1656421440d6baef18e84243f2fa8a1363adfab351fa3046f2bfba3b4c7dc
-  languageName: node
-  linkType: hard
-
-"@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch::locator=eslint-config-niieani%40workspace%3Apackages%2Feslint-config":
-  version: 2.2.0
-  resolution: "@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch::version=2.2.0&hash=ba1d08&locator=eslint-config-niieani%40workspace%3Apackages%2Feslint-config"
-  checksum: 900e96749708364025edcbb4497f5df36b1f75e47a7dc5d6744605129ea6ca4917f1656421440d6baef18e84243f2fa8a1363adfab351fa3046f2bfba3b4c7dc
-  languageName: node
-  linkType: hard
-
-"@beemo/config-constants@npm:2.2.0, @beemo/config-constants@npm:^2.2.0":
+"@beemo/config-constants@npm:^2.2.0":
   version: 2.2.0
   resolution: "@beemo/config-constants@npm:2.2.0"
   checksum: 873b823eae2d4224b75b96bc1f6166048d199e3a5f724be106a0fedb4da6af18ae8d79ba869880497aa989531a9b1bbfef3e6922760058a64201343e0c2094aa
@@ -3343,6 +3329,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@niieani/scaffold-config-constants@workspace:*, @niieani/scaffold-config-constants@workspace:packages/config-constants":
+  version: 0.0.0-use.local
+  resolution: "@niieani/scaffold-config-constants@workspace:packages/config-constants"
+  dependencies:
+    "@beemo/config-constants": ^2.2.0
+  languageName: unknown
+  linkType: soft
+
 "@niieani/scaffold-monorepo@workspace:.":
   version: 0.0.0-use.local
   resolution: "@niieani/scaffold-monorepo@workspace:."
@@ -3360,7 +3354,6 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@beemo/cli": ^2.0.6
     "@beemo/config-constants": ^2.2.0
-    "@beemo/config-constants-patched": "patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch"
     "@beemo/config-eslint": ^2.0.2
     "@beemo/config-jest": ^2.0.2
     "@beemo/core": ^2.1.4
@@ -3373,6 +3366,7 @@ __metadata:
     "@boost/module": ^3.1.0
     "@commitlint/config-conventional": ^17.0.2
     "@niieani/beemo-driver-vite": "workspace:*"
+    "@niieani/scaffold-config-constants": "workspace:*"
     "@rollup/plugin-node-resolve": ^13.3.0
     "@types/babel__core": ^7.1.19
     "@types/babel__preset-env": ^7.9.2
@@ -7576,8 +7570,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-niieani@workspace:packages/eslint-config"
   dependencies:
-    "@beemo/config-constants-patched": "patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch"
     "@niieani/scaffold": "workspace:*"
+    "@niieani/scaffold-config-constants": "workspace:*"
     "@types/eslint": ^8.4.3
     "@typescript-eslint/eslint-plugin": ^5.28.0
     "@typescript-eslint/parser": ^5.28.0
