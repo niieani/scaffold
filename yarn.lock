@@ -2231,10 +2231,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@beemo/config-constants-patched@patch:@beemo/config-constants@1.1.0#./patches/@beemo+config-constants.patch::locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold":
-  version: 1.1.0
-  resolution: "@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A1.1.0#./patches/@beemo+config-constants.patch::version=1.1.0&hash=6e4af1&locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold"
-  checksum: 37082d94642871096013c506ebad8dc396d2cf05fa66388db2481bfd8eb1528b48abf8c26dbe1f85cdf450aff61f493d1c3390569b8fcbf65f6d58bcae5d9ee3
+"@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch::locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold":
+  version: 2.2.0
+  resolution: "@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch::version=2.2.0&hash=ba1d08&locator=%40niieani%2Fscaffold%40workspace%3Apackages%2Fscaffold"
+  checksum: 900e96749708364025edcbb4497f5df36b1f75e47a7dc5d6744605129ea6ca4917f1656421440d6baef18e84243f2fa8a1363adfab351fa3046f2bfba3b4c7dc
   languageName: node
   linkType: hard
 
@@ -2242,13 +2242,6 @@ __metadata:
   version: 2.2.0
   resolution: "@beemo/config-constants-patched@patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch::version=2.2.0&hash=ba1d08&locator=eslint-config-niieani%40workspace%3Apackages%2Feslint-config"
   checksum: 900e96749708364025edcbb4497f5df36b1f75e47a7dc5d6744605129ea6ca4917f1656421440d6baef18e84243f2fa8a1363adfab351fa3046f2bfba3b4c7dc
-  languageName: node
-  linkType: hard
-
-"@beemo/config-constants@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@beemo/config-constants@npm:1.1.0"
-  checksum: d2677b3ff5a4807911fb55056a0636808266d0c75dedff33889f0c4a61102a46299fb1f7869f86e80db8d40eff1068a2a3db00d8166bccf99ca802d1a52d321f
   languageName: node
   linkType: hard
 
@@ -3367,7 +3360,7 @@ __metadata:
     "@babel/preset-env": ^7.18.2
     "@beemo/cli": ^2.0.6
     "@beemo/config-constants": ^2.2.0
-    "@beemo/config-constants-patched": "patch:@beemo/config-constants@1.1.0#./patches/@beemo+config-constants.patch"
+    "@beemo/config-constants-patched": "patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch"
     "@beemo/config-eslint": ^2.0.2
     "@beemo/config-jest": ^2.0.2
     "@beemo/core": ^2.1.4
