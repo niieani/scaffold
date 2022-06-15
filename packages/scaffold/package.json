@@ -27,7 +27,7 @@
     "@babel/preset-env": "^7.18.2",
     "@beemo/cli": "^2.0.6",
     "@beemo/config-constants": "^2.2.0",
-    "@beemo/config-constants-patched": "patch:@beemo/config-constants@1.1.0#./patches/@beemo+config-constants.patch",
+    "@beemo/config-constants-patched": "patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch",
     "@beemo/config-eslint": "^2.0.2",
     "@beemo/config-jest": "^2.0.2",
     "@beemo/core": "^2.1.4",
