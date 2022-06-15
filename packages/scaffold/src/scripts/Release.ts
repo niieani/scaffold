@@ -27,6 +27,7 @@ class ReleaseScript extends Script<Options> {
 
     const origin = `https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git`
 
+    await $`npm config set workspaces-update false`
     await $`git remote set-url origin ${origin}`
     await $`git config --global user.email "action@github.com"`
     await $`git config --global user.name "GitHub Action"`
