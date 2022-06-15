@@ -34,26 +34,26 @@
     "eslint": ">=7.32.0"
   },
   "dependencies": {
-    "@beemo/config-constants-patched": "patch:@beemo/config-constants@npm%3A1.1.0#./patches/@beemo+config-constants.patch",
+    "@beemo/config-constants-patched": "patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch",
     "@niieani/scaffold": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.25.0",
-    "@typescript-eslint/parser": "^5.25.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-compat": "^4.0.2",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.2.2",
+    "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-perf": "^3.3.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^42.0.0"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.3",
-    "eslint": "^8.15.0"
+    "eslint": "^8.17.0"
   }
 }

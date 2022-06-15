@@ -116,10 +116,12 @@ const reactConfig: eslint.Linter.ConfigOverride = {
     'react/jsx-uses-vars': 'error',
     'react/no-access-state-in-setstate': 'error',
     'react/no-array-index-key': 'error',
+    'react/no-arrow-function-lifecycle': 'error',
     'react/no-children-prop': 'error',
     'react/no-did-mount-set-state': 'error',
     'react/no-did-update-set-state': 'error',
     'react/no-direct-mutation-state': 'error',
+    'react/no-namespace': 'error',
     'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-string-refs': 'error',
@@ -128,12 +130,14 @@ const reactConfig: eslint.Linter.ConfigOverride = {
     'react/no-unescaped-entities': 'error',
     'react/no-unknown-property': 'error',
     'react/no-unstable-nested-components': 'error',
+    'react/no-unused-class-component-methods': 'error',
     'react/no-will-update-set-state': 'error',
     'react/require-optimization': 'off',
     'react/style-prop-object': 'error',
 
     // Accessibility requirements
     'react/button-has-type': 'error',
+    'react/no-invalid-html-attribute': 'error',
 
     // Security requirements
     'react/jsx-no-script-url': 'error',
@@ -167,7 +171,7 @@ const reactConfig: eslint.Linter.ConfigOverride = {
     // Allow either extension for JSX code, since some components may return null
     'react/jsx-filename-extension': [
       'error',
-      {allow: 'as-needed', extensions: ['.ts', '.tsx']},
+      {allow: 'as-needed', extensions: ['.tsx']},
     ],
 
     // Always use shorthand fragments when applicable

@@ -1,13 +1,13 @@
 /* eslint-disable import/no-commonjs,import/no-import-module-exports */
 import type eslint from 'eslint'
-import {TESTS_LIST} from '@beemo/config-constants-patched'
+import {EXTENSIONS_PATTERN, TESTS_LIST} from '@beemo/config-constants-patched'
 
 const jestConfig: eslint.Linter.ConfigOverride = {
   files: TESTS_LIST,
   plugins: ['jest'],
   env: {
     jest: true,
-    'jest/globals': true,
+    'jest/globals': false,
   },
   rules: {
     // Prefer `it` over `test`
@@ -18,8 +18,10 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 
     // Ensure we are expecting/asserting correctly
     'jest/expect-expect': 'error',
-    'jest/no-if': 'error',
+    'jest/no-conditional-in-test': 'error',
+    'jest/no-if': 'off', // deprecated
     'jest/no-standalone-expect': 'error',
+    'jest/prefer-expect-resolves': 'error',
 
     // Ensure our tests are deterministic
     'jest/no-interpolation-in-snapshots': 'error',
@@ -28,6 +30,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
     // Encourage readable titles and descriptions
     'jest/lowercase-name': 'off',
     'jest/no-identical-title': 'error',
+    'jest/prefer-lowercase-title': 'off',
     'jest/valid-title': 'error',
 
     // Prefer explicit APIs for better readability
@@ -38,6 +41,7 @@ const jestConfig: eslint.Linter.ConfigOverride = {
     'jest/no-restricted-matchers': 'off',
     'jest/no-test-prefixes': 'error',
     'jest/prefer-hooks-on-top': 'error',
+    'jest/prefer-to-be': 'error',
     'jest/prefer-to-contain': 'error',
     'jest/prefer-to-have-length': 'error',
     'jest/prefer-todo': 'error',
@@ -62,7 +66,9 @@ const jestConfig: eslint.Linter.ConfigOverride = {
 
     // Too abrasive and annoying
     'jest/prefer-expect-assertions': 'off',
+    'jest/prefer-snapshot-hint': 'off',
     'jest/prefer-strict-equal': 'off',
+    'jest/require-hook': 'off',
     'jest/unbound-method': 'off',
 
     // Hooks are nice / is shared state an issue? Revisit?
@@ -106,13 +112,17 @@ const testsConfig: eslint.Linter.ConfigOverride = {
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
+
+    // Allow relative import paths
+    'import/no-relative-packages': 'off',
+    'node/no-unpublished-import': 'off',
   },
 }
 
 const miscConfig: eslint.Linter.ConfigOverride = {
   files: [
     '**/{__mocks__,__fixtures__,__generated__}/**/*',
-    '**/{tests,__tests__}/**/{helpers,utils,setup}.{ts,tsx}',
+    `**/{tests,__tests__}/**/{helpers,utils,setup}.{${EXTENSIONS_PATTERN}}`,
   ],
   rules: {
     'import/no-commonjs': 'off',

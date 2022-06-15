@@ -19,15 +19,21 @@ const config: eslint.Linter.Config = {
     'unicorn/escape-case': 'error',
     'unicorn/no-console-spaces': 'error',
     'unicorn/no-hex-escape': 'error',
+    'unicorn/no-unreadable-iife': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-zero-fractions': 'error',
+    'unicorn/prefer-native-coercion-functions': 'error',
     'unicorn/prefer-switch': 'error',
     'unicorn/string-content': 'error',
+    'unicorn/relative-url-style': ['error', 'always'],
+    'unicorn/text-encoding-identifier-case': 'error',
 
     // Better error handling and implementation
     'unicorn/catch-error-name': 'error',
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
+    'unicorn/no-thenable': 'error',
+    'unicorn/no-useless-promise-resolve-reject': 'error',
     'unicorn/prefer-type-error': 'error',
 
     // Too abrasive / too many false positives
@@ -37,14 +43,17 @@ const config: eslint.Linter.Config = {
     'unicorn/no-unused-properties': 'off',
     'unicorn/prefer-set-has': 'off',
     'unicorn/prevent-abbreviations': 'off',
+    'unicorn/template-indent': 'off',
 
     // Ensure consistent and correct syntax
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-instanceof-array': 'error',
+    'unicorn/no-invalid-remove-event-listener': 'error',
     'unicorn/no-new-array': 'error',
     'unicorn/no-new-buffer': 'error',
     'unicorn/no-this-assignment': 'error',
     'unicorn/no-useless-spread': 'error',
+    'unicorn/no-useless-switch-case': 'error',
     'unicorn/numeric-separators-style': [
       'error',
       {number: {minimumDigits: 0, groupLength: 3}},
@@ -59,6 +68,7 @@ const config: eslint.Linter.Config = {
     'unicorn/import-style': 'off',
     'unicorn/no-abusive-eslint-disable': 'error',
     'unicorn/no-array-method-this-argument': 'error',
+    'unicorn/no-useless-fallback-in-spread': 'error',
     'unicorn/no-useless-length-check': 'error',
     'unicorn/no-useless-undefined': 'off',
     'unicorn/prefer-negative-index': 'error',
@@ -107,6 +117,7 @@ const config: eslint.Linter.Config = {
     'unicorn/prefer-array-flat-map': 'error',
     'unicorn/prefer-array-index-of': 'error',
     'unicorn/prefer-array-some': 'error',
+    'unicorn/prefer-code-point': 'error',
     'unicorn/prefer-date-now': 'error',
     'unicorn/prefer-dom-node-append': 'error',
     'unicorn/prefer-dom-node-dataset': 'error',
@@ -116,6 +127,7 @@ const config: eslint.Linter.Config = {
     'unicorn/prefer-keyboard-event-key': 'error',
     'unicorn/prefer-math-trunc': 'error',
     'unicorn/prefer-modern-dom-apis': 'error',
+    'unicorn/prefer-modern-math-apis': 'error',
     'unicorn/prefer-module': nodeVersion >= 14 ? 'error' : 'off',
     'unicorn/prefer-node-protocol': nodeVersion >= 16 ? 'error' : 'off',
     'unicorn/prefer-number-properties': 'error',
@@ -129,12 +141,16 @@ const config: eslint.Linter.Config = {
     'unicorn/prefer-top-level-await': nodeVersion >= 14.8 ? 'error' : 'off',
 
     // Not available on enough platforms yet
-    'unicorn/prefer-at': 'off',
-    'unicorn/prefer-object-has-own': 'off',
-    'unicorn/prefer-string-replace-all': 'off',
+    'unicorn/prefer-at': 'error',
+    'unicorn/prefer-object-has-own': 'error',
+    'unicorn/prefer-string-replace-all': 'error',
 
-    // Is caught/handled by TypeScript instead
+    // Autofixing is abrasive
+    'unicorn/prefer-export-from': 'off',
+
+    // Is caught/handled/conflicts by TypeScript instead
     'unicorn/no-array-callback-reference': 'off',
+    'unicorn/prefer-json-parse-buffer': 'off',
   },
 }
 
