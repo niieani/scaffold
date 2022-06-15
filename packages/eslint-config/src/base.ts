@@ -40,6 +40,7 @@ const config: eslint.Linter.Config = {
     ],
 
     // Avoid bad or problematic syntax/patterns
+    'no-constant-binary-expression': 'error',
     'no-constant-condition': 'error',
     'no-constructor-return': 'error',
     'no-div-regex': 'error',
@@ -53,6 +54,7 @@ const config: eslint.Linter.Config = {
       'error',
       {disallowArithmeticOperators: true},
     ],
+    'no-unused-private-class-members': 'error',
     'no-useless-call': 'error',
     'require-atomic-updates': 'error',
 
@@ -86,6 +88,8 @@ const config: eslint.Linter.Config = {
 
     // Allow modern APIs
     'no-restricted-syntax': 'off',
+
+    'prefer-object-has-own': 'error',
   },
 }
 

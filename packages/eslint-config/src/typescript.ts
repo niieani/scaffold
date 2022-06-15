@@ -80,7 +80,7 @@ const config: eslint.Linter.Config = {
     ],
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-dupe-class-members': 'error',
-    '@typescript-eslint/no-duplicate-imports': 'error',
+    '@typescript-eslint/no-duplicate-imports': 'off', // Prefer import plugin
     '@typescript-eslint/no-implied-eval': 'error',
     '@typescript-eslint/no-invalid-this': 'error',
     '@typescript-eslint/no-loop-func': 'error',
@@ -89,7 +89,10 @@ const config: eslint.Linter.Config = {
       'error',
       {ignoreDeclarationMerge: true},
     ],
-    '@typescript-eslint/no-shadow': ['error', {ignoreTypeValueShadow: true}],
+    '@typescript-eslint/no-shadow': [
+      'error',
+      {ignoreOnInitialization: true, ignoreTypeValueShadow: true},
+    ],
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unused-expressions': 'error',
     '@typescript-eslint/no-unused-vars': [
@@ -132,6 +135,7 @@ const config: eslint.Linter.Config = {
 
     // Prefer compact and readable code
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
+    '@typescript-eslint/no-redundant-type-constituents': 'error',
     '@typescript-eslint/sort-type-union-intersection-members': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
 
@@ -205,6 +209,7 @@ const config: eslint.Linter.Config = {
     ],
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/non-nullable-type-assertion-style': 'error',
@@ -264,6 +269,7 @@ const config: eslint.Linter.Config = {
     ],
 
     // Avoid problematic or unnecessary patterns
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-this-alias': ['error', {allowDestructuring: true}],
@@ -281,7 +287,10 @@ const config: eslint.Linter.Config = {
       'error',
       {checkCompoundAssignments: true},
     ],
-    '@typescript-eslint/unified-signatures': 'error',
+    '@typescript-eslint/unified-signatures': [
+      'error',
+      {ignoreDifferentlyNamedParameters: true},
+    ],
 
     // Sometimes we need to be explicit because the inference is wrong
     '@typescript-eslint/no-unnecessary-type-arguments': 'off',
@@ -289,6 +298,9 @@ const config: eslint.Linter.Config = {
     // Sometimes we define empty functions in base/abstract classes
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'off',
+
+    // Sometimes necessary because of isolated modules
+    '@typescript-eslint/no-useless-empty-export': 'off',
 
     // Prefer modern syntax
     '@typescript-eslint/prefer-includes': 'error',
