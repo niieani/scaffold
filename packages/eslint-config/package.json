@@ -31,7 +31,7 @@
     "rrun": "rrun"
   },
   "peerDependencies": {
-    "eslint": ">=7.0.0"
+    "eslint": ">=7.32.0"
   },
   "dependencies": {
     "@beemo/config-constants-patched": "patch:@beemo/config-constants@npm%3A2.2.0#./patches/@beemo-config-constants-npm-2.2.0-bad02b93f0.patch",

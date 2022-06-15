@@ -19,6 +19,7 @@ const config: eslint.Linter.Config = {
       },
     },
     'import/parsers': {
+      // eslint-disable-next-line no-magic-numbers
       '@typescript-eslint/parser': EXTENSIONS.slice(0, 4),
     },
   },

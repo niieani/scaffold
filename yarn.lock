@@ -7603,7 +7603,7 @@ __metadata:
     eslint-plugin-simple-import-sort: ^7.0.0
     eslint-plugin-unicorn: ^42.0.0
   peerDependencies:
-    eslint: ">=7.0.0"
+    eslint: ">=7.32.0"
   languageName: unknown
   linkType: soft
 
