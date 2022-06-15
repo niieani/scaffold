@@ -40,7 +40,7 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "@niieani/scaffold": "workspace:*",
+    "@niieani/scaffold": "*",
     "@yarnpkg/core": "^3.2.2"
   },
   "publishConfig": {
@@ -65,5 +65,11 @@
         "prerelease": true
       }
     ]
+  },
+  "resolutions": {
+    "@niieani/beemo-driver-vite": "workspace:*",
+    "@niieani/scaffold-config-constants": "workspace:*",
+    "@niieani/scaffold": "workspace:*",
+    "eslint-config-niieani": "workspace:*"
   }
 }
