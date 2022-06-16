@@ -10,7 +10,7 @@ import {
   getRootProjectReferences,
   getRootTSConfig,
   getTargetNodeRuntime,
-  IGNORE_LIST,
+  IGNORE_LIST as ORIGINAL_IGNORE_LIST,
   NON_JS_REGEX,
   PACKAGE_JSON_PATH,
   parseJSON,
@@ -18,6 +18,11 @@ import {
   TS_PATH_PREFIX_REGEX,
   TSCONFIG_JSON_PATH,
 } from '@beemo/config-constants'
+
+export const ADDITIONAL_IGNORE_LIST = ['*.d.ts', '*.map']
+const IGNORE_LIST = ORIGINAL_IGNORE_LIST.includes(ADDITIONAL_IGNORE_LIST.at(0)!)
+  ? ORIGINAL_IGNORE_LIST
+  : [...ORIGINAL_IGNORE_LIST, ...ADDITIONAL_IGNORE_LIST]
 
 const ALL_FILES_GLOB = `**/{src,tests,__tests__}/**/!(*.d).{${EXTENSIONS_PATTERN}}`
 const SOURCE_FILES_GLOB = `**/src/**/*!(*.d).{${EXTENSIONS_PATTERN}}`
