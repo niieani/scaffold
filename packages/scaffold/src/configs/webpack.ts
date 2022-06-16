@@ -5,7 +5,6 @@
 
 const path = require('path')
 
-/** @type {(env: Record<string, string | boolean>) => import('webpack').Configuration} */
 // eslint-disable-next-line import/no-commonjs
 module.exports = ({
   moduleTarget,
@@ -16,10 +15,17 @@ module.exports = ({
   export: exportName = 'default',
   filename = 'main.js',
   outDir = moduleTarget,
-}) => {
-  /** @type {import('webpack').Configuration} */
-  const esmConfig = {
-    target: [codeTarget, engineTarget].filter(Boolean),
+}: {
+  moduleTarget: string
+  codeTarget?: string
+  engineTarget?: string
+  name?: string
+  export?: string
+  filename?: string
+  outDir?: string
+}): import('webpack').Configuration => {
+  const esmConfig: import('webpack').Configuration = {
+    target: [codeTarget, engineTarget].filter(Boolean) as string[],
     output: {
       module: true,
       library: {
@@ -32,8 +38,7 @@ module.exports = ({
       topLevelAwait: true,
     },
   }
-  /** @type {import('webpack').Configuration} */
-  const umdConfig = {
+  const umdConfig: import('webpack').Configuration = {
     target: [codeTarget, engineTarget ?? 'web'].filter(Boolean),
     output: {
       library: {

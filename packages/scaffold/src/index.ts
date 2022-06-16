@@ -45,7 +45,7 @@ export default async function bootstrap(tool: Tool) {
       // eslint-disable-next-line no-param-reassign
       delete packageConfig.compilerOptions.declarationDir
       // eslint-disable-next-line no-param-reassign
-      delete packageConfig.compilerOptions.outDir
+      // delete packageConfig.compilerOptions.outDir
       if (noCompile) {
         // eslint-disable-next-line no-param-reassign
         packageConfig.compilerOptions.sourceMap = false

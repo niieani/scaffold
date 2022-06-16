@@ -24,7 +24,7 @@
     "test": "yarn test:format && yarn test:types && yarn test:lint && yarn test:code",
     "test:lint": "rrun eslint 'packages/*/src/**'",
     "test:code": "beemo jest",
-    "test:types": "yarn foreach-run tsc --noEmit",
+    "test:types": "tsc --build",
     "test:format": "yarn foreach-run prettier --check \"./{src,tests,.config}/**/!(*.d).{.js,jsx,ts,tsx,json,md}\"",
     "build:eslint-config": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspace eslint-config-niieani run build",
     "build:constants": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspace @niieani/scaffold-config-constants run build",

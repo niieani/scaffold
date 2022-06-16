@@ -1,5 +1,5 @@
 import type {ConfigEnv, UserConfig, UserConfigExport} from 'vite'
-import type {ViteMakeConfig} from '@niieani/beemo-driver-vite'
+import type {ViteMakeConfig, ViteOptions} from '@niieani/beemo-driver-vite'
 import resolve from '@rollup/plugin-node-resolve'
 import react from '@vitejs/plugin-react'
 // import polyfillNode from 'rollup-plugin-polyfill-node'
@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react'
 // import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
 
 export const makeConfig: ViteMakeConfig =
-  (options, overridesDefinition?: UserConfigExport) =>
+  (options: ViteOptions, overridesDefinition?: UserConfigExport) =>
   async (env: ConfigEnv): Promise<UserConfig> => {
     const overrides =
       (await (typeof overridesDefinition === 'function'
