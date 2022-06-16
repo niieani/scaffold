@@ -1,9 +1,7 @@
-import {IGNORE_LIST} from '@beemo/config-constants'
 import type {BeemoConfig, ConfigObject, Path, Tool} from '@beemo/core'
 import {CreateConfigRoutine} from '@beemo/core/lib/routines/CreateConfigRoutine'
 import type {TypeScriptDriver} from '@beemo/driver-typescript'
 import {requireModule} from '@boost/module'
-import {ADDITIONAL_IGNORE_LIST} from '@niieani/scaffold-config-constants'
 
 // monkey patch to allow functions to be used as configs
 CreateConfigRoutine.prototype.loadConfigAtPath = function loadConfigAtPath(
@@ -31,9 +29,6 @@ export interface BeemoSettings {
 }
 
 export default async function bootstrap(tool: Tool) {
-  // hack, will be fixed when not using `beemo`
-  IGNORE_LIST.push(...ADDITIONAL_IGNORE_LIST)
-
   const {vite, noCompile} = tool.config.settings as BeemoSettings
   if (vite) {
     await tool.driverRegistry.load(

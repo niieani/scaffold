@@ -1,10 +1,13 @@
 import beemoConfig from '@beemo/config-eslint'
 import type {ESLintConfig} from '@beemo/driver-eslint'
-import {IGNORE_LIST, TESTS_LIST} from '@niieani/scaffold-config-constants'
+import {
+  FOLDER_IGNORE_LIST,
+  TESTS_LIST,
+} from '@niieani/scaffold-config-constants'
 
 const config: ESLintConfig = {
   ...beemoConfig,
-  ignore: IGNORE_LIST,
+  ignore: FOLDER_IGNORE_LIST,
   extends: [
     'plugin:import/typescript',
     ...(Array.isArray(beemoConfig.extends)

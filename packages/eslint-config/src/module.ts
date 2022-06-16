@@ -3,7 +3,7 @@ import {builtinModules} from 'module'
 import type eslint from 'eslint'
 import {
   EXTENSIONS,
-  IGNORE_LIST,
+  FOLDER_IGNORE_LIST,
   NON_JS_REGEX,
   TS_PATH_PREFIX_REGEX,
 } from '@niieani/scaffold-config-constants'
@@ -12,7 +12,7 @@ const config: eslint.Linter.Config = {
   plugins: ['import', 'simple-import-sort'],
   settings: {
     'import/extensions': EXTENSIONS,
-    'import/ignore': [...IGNORE_LIST, NON_JS_REGEX],
+    'import/ignore': [...FOLDER_IGNORE_LIST, NON_JS_REGEX],
     'import/resolver': {
       node: {
         extensions: [...EXTENSIONS, '.json'],

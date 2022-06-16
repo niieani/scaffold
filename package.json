@@ -28,7 +28,7 @@
     "test:format": "yarn foreach-run prettier --check \"./{src,tests,.config}/**/!(*.d).{.js,jsx,ts,tsx,json,md}\"",
     "build:eslint-config": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspace eslint-config-niieani run build",
     "build:constants": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspace @niieani/scaffold-config-constants run build",
-    "build": "yarn foreach-run tsc --emitDeclarationOnly && yarn build:constants && yarn build:eslint-config",
+    "build": "yarn build:constants && yarn build:eslint-config",
     "clean": "git clean -dfX --exclude=node_modules packages && beemo typescript:sync-project-refs"
   },
   "prettier": {

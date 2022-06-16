@@ -1,6 +1,6 @@
 import type {CompilerOptions} from 'typescript'
 import type {TypeScriptConfig} from '@beemo/driver-typescript'
-import {IGNORE_LIST} from '@niieani/scaffold-config-constants'
+import {FOLDER_IGNORE_LIST} from '@niieani/scaffold-config-constants'
 
 interface TSConfig extends TypeScriptConfig {
   compilerOptions: Pick<CompilerOptions, 'noImplicitOverride'> &
@@ -26,7 +26,7 @@ const config: TSConfig = {
     resolveJsonModule: true,
     skipLibCheck: true,
   },
-  exclude: IGNORE_LIST,
+  exclude: FOLDER_IGNORE_LIST,
 }
 
 export default config
