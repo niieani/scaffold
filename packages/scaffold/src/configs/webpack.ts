@@ -3,10 +3,9 @@
 // this is a config for compiling libraries
 // for compiling websites, use vite
 
-const path = require('path')
+import path from 'path'
 
-// eslint-disable-next-line import/no-commonjs
-module.exports = ({
+export = ({
   moduleTarget,
   // TODO: sync from beemo's config settings
   codeTarget = 'es2020',

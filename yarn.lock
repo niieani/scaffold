@@ -3334,7 +3334,6 @@ __metadata:
   resolution: "@niieani/scaffold-config-constants@workspace:packages/config-constants"
   dependencies:
     "@beemo/config-constants": ^2.2.0
-    "@niieani/scaffold": "*"
   languageName: unknown
   linkType: soft
 
@@ -7571,7 +7570,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-niieani@workspace:packages/eslint-config"
   dependencies:
-    "@niieani/scaffold": "*"
     "@niieani/scaffold-config-constants": "*"
     "@types/eslint": ^8.4.3
     "@typescript-eslint/eslint-plugin": ^5.28.0

@@ -39,3 +39,4 @@ const TESTS_LIST = [
     `**/*.test!(*.d).{${config_constants_1.EXTENSIONS_PATTERN}}`,
 ]; // Pattern of file extensions
 exports.TESTS_LIST = TESTS_LIST;
+//# sourceMappingURL=main.js.map

@@ -1,6 +1,5 @@
 import type {BeemoConfig, ConfigObject, Path, Tool} from '@beemo/core'
 import {CreateConfigRoutine} from '@beemo/core/lib/routines/CreateConfigRoutine'
-import type {TypeScriptDriver} from '@beemo/driver-typescript'
 import {requireModule} from '@boost/module'
 
 // monkey patch to allow functions to be used as configs
@@ -29,7 +28,7 @@ export interface BeemoSettings {
 }
 
 export default async function bootstrap(tool: Tool) {
-  const {vite, noCompile} = tool.config.settings as BeemoSettings
+  const {vite} = tool.config.settings as BeemoSettings
   if (vite) {
     await tool.driverRegistry.load(
       require.resolve('../drivers/Vite.ts'),
@@ -37,21 +36,9 @@ export default async function bootstrap(tool: Tool) {
       {tool},
     )
   }
-  if (tool.driverRegistry.isRegistered('typescript')) {
-    const tsDriver: TypeScriptDriver = tool.driverRegistry.get('typescript')
-    tsDriver.onCreateProjectConfigFile.listen((_configPath, packageConfig) => {
-      if (!packageConfig.compilerOptions) return
-      // remove buildFolder references:
-      // eslint-disable-next-line no-param-reassign
-      delete packageConfig.compilerOptions.declarationDir
-      // eslint-disable-next-line no-param-reassign
-      // delete packageConfig.compilerOptions.outDir
-      if (noCompile) {
-        // eslint-disable-next-line no-param-reassign
-        packageConfig.compilerOptions.sourceMap = false
-      }
-      // packageConfig.exclude?.push('node_modules')
-      // packageConfig.exclude?.shift()
-    })
-  }
+  // if (tool.driverRegistry.isRegistered('typescript')) {
+  //   const tsDriver: TypeScriptDriver = tool.driverRegistry.get('typescript')
+  //   tsDriver.onCreateProjectConfigFile.listen((_configPath, packageConfig) => {
+  //   })
+  // }
 }
