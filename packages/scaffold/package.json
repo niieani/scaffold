@@ -16,8 +16,8 @@
     "beemo": "./bin/beemo.js",
     "rrun": "./bin/rrun.js"
   },
-  "main": "src/index.ts",
-  "source": "src/index.ts",
+  "main": "./lib/index.js",
+  "source": "./src/index.ts",
   "scripts": {
     "rrun": "rrun"
   },

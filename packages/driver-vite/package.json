@@ -12,8 +12,8 @@
   "bugs": {
     "url": "https://github.com/niieani/scaffold/issues"
   },
-  "main": "src/main.ts",
-  "source": "src/main.ts",
+  "main": "./lib/main.js",
+  "source": "./src/main.ts",
   "scripts": {
     "rrun": "rrun"
   },

@@ -16,7 +16,6 @@
   "types": "./lib/main.d.ts",
   "source": "./src/main.ts",
   "scripts": {
-    "build": "rrun tsc --outDir lib --module commonjs",
     "rrun": "rrun"
   },
   "sideEffects": false,
