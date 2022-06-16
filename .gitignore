@@ -49,3 +49,6 @@ node_modules/
 *.map
 
 .DS_Store
+
+packages/**/lib/**
+!packages/config-constants/lib/**
