@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.parseJSON = exports.getTargetNodeRuntime = exports.getRootTSConfig = exports.getRootProjectReferences = exports.getRootPackageJSON = exports.getPackageVersion = exports.TS_PATH_PREFIX_REGEX = exports.TSCONFIG_JSON_PATH = exports.TEST_UTILS_GLOB = exports.TEST_FILES_GLOB = exports.TESTS_LIST = exports.SOURCE_FILES_GLOB = exports.ROOT = exports.PACKAGE_JSON_PATH = exports.NON_JS_REGEX = exports.IGNORE_LIST = exports.EXTENSIONS_WITHOUT_DOT = exports.EXTENSIONS_PATTERN = exports.EXTENSIONS = exports.ECMA_VERSION = exports.CASE_SENSITIVE = exports.ALL_JS_REGEX = exports.ALL_FILES_GLOB = void 0;
+exports.TSCONFIG_JSON_PATH = exports.TS_PATH_PREFIX_REGEX = exports.TESTS_LIST = exports.TEST_UTILS_GLOB = exports.TEST_FILES_GLOB = exports.SOURCE_FILES_GLOB = exports.ROOT = exports.parseJSON = exports.PACKAGE_JSON_PATH = exports.NON_JS_REGEX = exports.IGNORE_LIST = exports.getTargetNodeRuntime = exports.getRootTSConfig = exports.getRootProjectReferences = exports.getRootPackageJSON = exports.getPackageVersion = exports.EXTENSIONS_WITHOUT_DOT = exports.EXTENSIONS_PATTERN = exports.EXTENSIONS = exports.ECMA_VERSION = exports.CASE_SENSITIVE = exports.ALL_JS_REGEX = exports.ALL_FILES_GLOB = exports.ADDITIONAL_IGNORE_LIST = void 0;
 const config_constants_1 = require("@beemo/config-constants");
 Object.defineProperty(exports, "ALL_JS_REGEX", { enumerable: true, get: function () { return config_constants_1.ALL_JS_REGEX; } });
 Object.defineProperty(exports, "CASE_SENSITIVE", { enumerable: true, get: function () { return config_constants_1.CASE_SENSITIVE; } });
@@ -8,18 +8,22 @@ Object.defineProperty(exports, "ECMA_VERSION", { enumerable: true, get: function
 Object.defineProperty(exports, "EXTENSIONS", { enumerable: true, get: function () { return config_constants_1.EXTENSIONS; } });
 Object.defineProperty(exports, "EXTENSIONS_PATTERN", { enumerable: true, get: function () { return config_constants_1.EXTENSIONS_PATTERN; } });
 Object.defineProperty(exports, "EXTENSIONS_WITHOUT_DOT", { enumerable: true, get: function () { return config_constants_1.EXTENSIONS_WITHOUT_DOT; } });
-Object.defineProperty(exports, "IGNORE_LIST", { enumerable: true, get: function () { return config_constants_1.IGNORE_LIST; } });
-Object.defineProperty(exports, "NON_JS_REGEX", { enumerable: true, get: function () { return config_constants_1.NON_JS_REGEX; } });
-Object.defineProperty(exports, "PACKAGE_JSON_PATH", { enumerable: true, get: function () { return config_constants_1.PACKAGE_JSON_PATH; } });
-Object.defineProperty(exports, "ROOT", { enumerable: true, get: function () { return config_constants_1.ROOT; } });
-Object.defineProperty(exports, "TSCONFIG_JSON_PATH", { enumerable: true, get: function () { return config_constants_1.TSCONFIG_JSON_PATH; } });
-Object.defineProperty(exports, "TS_PATH_PREFIX_REGEX", { enumerable: true, get: function () { return config_constants_1.TS_PATH_PREFIX_REGEX; } });
 Object.defineProperty(exports, "getPackageVersion", { enumerable: true, get: function () { return config_constants_1.getPackageVersion; } });
 Object.defineProperty(exports, "getRootPackageJSON", { enumerable: true, get: function () { return config_constants_1.getRootPackageJSON; } });
 Object.defineProperty(exports, "getRootProjectReferences", { enumerable: true, get: function () { return config_constants_1.getRootProjectReferences; } });
 Object.defineProperty(exports, "getRootTSConfig", { enumerable: true, get: function () { return config_constants_1.getRootTSConfig; } });
 Object.defineProperty(exports, "getTargetNodeRuntime", { enumerable: true, get: function () { return config_constants_1.getTargetNodeRuntime; } });
+Object.defineProperty(exports, "NON_JS_REGEX", { enumerable: true, get: function () { return config_constants_1.NON_JS_REGEX; } });
+Object.defineProperty(exports, "PACKAGE_JSON_PATH", { enumerable: true, get: function () { return config_constants_1.PACKAGE_JSON_PATH; } });
 Object.defineProperty(exports, "parseJSON", { enumerable: true, get: function () { return config_constants_1.parseJSON; } });
+Object.defineProperty(exports, "ROOT", { enumerable: true, get: function () { return config_constants_1.ROOT; } });
+Object.defineProperty(exports, "TS_PATH_PREFIX_REGEX", { enumerable: true, get: function () { return config_constants_1.TS_PATH_PREFIX_REGEX; } });
+Object.defineProperty(exports, "TSCONFIG_JSON_PATH", { enumerable: true, get: function () { return config_constants_1.TSCONFIG_JSON_PATH; } });
+exports.ADDITIONAL_IGNORE_LIST = ['*.d.ts', '*.map'];
+const IGNORE_LIST = config_constants_1.IGNORE_LIST.includes(exports.ADDITIONAL_IGNORE_LIST.at(0))
+    ? config_constants_1.IGNORE_LIST
+    : [...config_constants_1.IGNORE_LIST, ...exports.ADDITIONAL_IGNORE_LIST];
+exports.IGNORE_LIST = IGNORE_LIST;
 const ALL_FILES_GLOB = `**/{src,tests,__tests__}/**/!(*.d).{${config_constants_1.EXTENSIONS_PATTERN}}`;
 exports.ALL_FILES_GLOB = ALL_FILES_GLOB;
 const SOURCE_FILES_GLOB = `**/src/**/*!(*.d).{${config_constants_1.EXTENSIONS_PATTERN}}`;

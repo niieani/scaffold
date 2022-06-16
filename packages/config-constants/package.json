@@ -22,5 +22,8 @@
   "sideEffects": false,
   "dependencies": {
     "@beemo/config-constants": "^2.2.0"
+  },
+  "devDependencies": {
+    "@niieani/scaffold": "*"
   }
 }

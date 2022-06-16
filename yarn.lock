@@ -3334,6 +3334,7 @@ __metadata:
   resolution: "@niieani/scaffold-config-constants@workspace:packages/config-constants"
   dependencies:
     "@beemo/config-constants": ^2.2.0
+    "@niieani/scaffold": "*"
   languageName: unknown
   linkType: soft
 
