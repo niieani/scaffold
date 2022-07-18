@@ -3489,7 +3489,7 @@ __metadata:
     lodash: ^4.17.21
     multi-semantic-release: ^2.13.0
     prettier: ^2.7.1
-    rollup: ^2.75.6
+    rollup: ^2.75.7
     sort-package-json: ^1.57.0
     ts-jest: ^28.0.5
     ts-loader: ^9.3.0
@@ -13817,9 +13817,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.75.6":
-  version: 2.75.6
-  resolution: "rollup@npm:2.75.6"
+"rollup@npm:^2.75.7":
+  version: 2.77.0
+  resolution: "rollup@npm:2.77.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -13827,7 +13827,7 @@ resolve@^2.0.0-next.3:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: df83c6d43a144a296daf82bed7f12f2dfcc6c495a64245e840d15fd21f2ab8b66bb3423e61c974875b33ccf53fb659d2ed099f272937ecf23af48815277c6cd5
+  checksum: 74ccc98429709984a89af636250833e7502d87f1d9c6d96ebfe4b52030ebf94b9f6b84b8ab476670329a61d54b681d35eecdc601bac5b5396b099b1ea69970ef
   languageName: node
   linkType: hard
 
