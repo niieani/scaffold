@@ -52,7 +52,7 @@
     "lodash": "^4.17.21",
     "multi-semantic-release": "^2.13.0",
     "prettier": "^2.7.1",
-    "rollup": "^2.75.6",
+    "rollup": "^2.75.7",
     "sort-package-json": "^1.57.0",
     "ts-jest": "^28.0.5",
     "ts-loader": "^9.3.0",
