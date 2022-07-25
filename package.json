@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@niieani/scaffold": "*",
-    "@yarnpkg/core": "^3.2.2"
+    "@yarnpkg/core": "^3.2.3"
   },
   "publishConfig": {
     "access": "public"
