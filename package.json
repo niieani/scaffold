@@ -23,7 +23,7 @@
     "foreach-run": "PATH=\"$PWD/node_modules/.bin:$PATH\" yarn workspaces foreach --verbose run rrun",
     "test": "yarn test:format && yarn test:types && yarn test:lint && yarn test:code",
     "test:lint": "rrun eslint 'packages/*/src/**'",
-    "test:code": "beemo jest",
+    "test:code": "rrun jest",
     "test:types": "tsc --build",
     "test:format": "yarn foreach-run prettier --check \"./{src,tests,.config}/**/!(*.d).{.js,jsx,ts,tsx,json,md}\"",
     "build": "tsc --build",

@@ -91,9 +91,9 @@ const config: eslint.Linter.Config = {
     // Sort imports and exports deterministicly
     'sort-imports': 'off',
     'import/order': 'off',
-    'simple-import-sort/exports': 'error',
+    'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': [
-      'error',
+      'warn',
       {
         groups: [
           [

@@ -231,7 +231,7 @@ class InitProjectScript extends Script<Options> {
         'test:lint': monorepo
           ? `rrun eslint 'packages/*/src/**/*.{js,jsx,ts,tsx}'`
           : `rrun eslint 'src/**/*.{js,jsx,ts,tsx}'`,
-        'test:code': 'beemo jest',
+        'test:code': 'rrun jest',
         'test:types': `yarn ${runCommand} tsc --noEmit`,
         'test:format': `yarn ${runCommand} prettier --check "${prettierRange}"`,
         test: 'yarn test:format && yarn test:types && yarn test:lint && yarn test:code',
