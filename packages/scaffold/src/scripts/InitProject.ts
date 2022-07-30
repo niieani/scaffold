@@ -262,6 +262,7 @@ class InitProjectScript extends Script<Options> {
           },
         ],
       },
+      files: packageJson.files ?? ['src', 'cjs', 'esm'],
     }
 
     await writePackageJson(rootPath, updatedPackageJson)
