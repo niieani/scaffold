@@ -31,7 +31,6 @@ class ReleaseScript extends Script<Options> {
     await $`git remote set-url origin ${origin}`
     await $`git config --global user.email "action@github.com"`
     await $`git config --global user.name "GitHub Action"`
-    await $`yarn build`
 
     const dryRun = args.options.dryRun ? '--dry-run' : ''
 
