@@ -24,7 +24,7 @@
   "source": "./src/index.ts",
   "author": "Bazyli Brzóska",
   "engines": {
-    "node": ">=12.17.0",
+    "node": ">=v12.22.12",
     "npm": ">=6.13.7"
   },
   "scripts": {
