@@ -178,7 +178,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.18.13":
+"@babel/core@npm:^7.19.0":
   version: 7.19.0
   resolution: "@babel/core@npm:7.19.0"
   dependencies:
@@ -3503,7 +3503,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@niieani/scaffold@workspace:packages/scaffold"
   dependencies:
-    "@babel/core": ^7.18.13
+    "@babel/core": ^7.19.0
     "@babel/preset-env": ^7.18.10
     "@beemo/cli": ^2.0.6
     "@beemo/config-constants": ^2.2.0
