@@ -3597,7 +3597,7 @@ __metadata:
     "@types/babel__preset-env": ^7.9.2
     "@types/eslint": ^8.4.6
     "@types/lodash": ^4.14.186
-    "@types/prettier": ^2.6.4
+    "@types/prettier": ^2.7.1
     "@types/which": ^2.0.1
     "@vitejs/plugin-react": ^2.0.1
     commitlint: ^17.0.3
@@ -4552,10 +4552,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2.6.4":
-  version: 2.6.4
-  resolution: "@types/prettier@npm:2.6.4"
-  checksum: a8ec6601cbacf8040782cc883bf1a9393fdcb991ebe88440b0f875bb1556652927ac9fe61a721b6c666ac6252158ba327ce2868559bafa2c86e7dfef4089782a
+"@types/prettier@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "@types/prettier@npm:2.7.1"
+  checksum: 5e3f58e229d6c73b5f5cae2e8f96c1c4a5b5805f83459e17a045ba8e96152b1d38e86b63e3172fb159dac923388699660862b75b2d37e54220805f0e691e26f1
   languageName: node
   linkType: hard
 

@@ -67,7 +67,7 @@
     "@types/babel__preset-env": "^7.9.2",
     "@types/eslint": "^8.4.6",
     "@types/lodash": "^4.14.186",
-    "@types/prettier": "^2.6.4",
+    "@types/prettier": "^2.7.1",
     "@types/which": "^2.0.1"
   }
 }
