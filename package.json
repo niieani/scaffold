@@ -44,7 +44,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@3.2.4",
   "release": {
     "branches": [
       "+([0-9])?(.{+([0-9]),x}).x",
