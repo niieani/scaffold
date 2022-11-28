@@ -3511,7 +3511,7 @@ __metadata:
   resolution: "@niieani/scaffold-monorepo@workspace:."
   dependencies:
     "@niieani/scaffold": "*"
-    "@yarnpkg/core": ^3.2.5
+    "@yarnpkg/core": ^3.3.0
   languageName: unknown
   linkType: soft
 
@@ -5008,19 +5008,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^3.2.5":
-  version: 3.2.5
-  resolution: "@yarnpkg/core@npm:3.2.5"
+"@yarnpkg/core@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "@yarnpkg/core@npm:3.3.0"
   dependencies:
     "@arcanis/slice-ansi": ^1.1.1
     "@types/semver": ^7.1.0
     "@types/treeify": ^1.0.0
-    "@yarnpkg/fslib": ^2.8.0
+    "@yarnpkg/fslib": ^2.9.0
     "@yarnpkg/json-proxy": ^2.1.1
     "@yarnpkg/libzip": ^2.2.4
     "@yarnpkg/parsers": ^2.5.1
-    "@yarnpkg/pnp": ^3.2.4
-    "@yarnpkg/shell": ^3.2.4
+    "@yarnpkg/pnp": ^3.2.5
+    "@yarnpkg/shell": ^3.2.5
     camelcase: ^5.3.1
     chalk: ^3.0.0
     ci-info: ^3.2.0
@@ -5044,7 +5044,7 @@ __metadata:
     treeify: ^1.1.0
     tslib: ^1.13.0
     tunnel: ^0.0.6
-  checksum: 0fa78ff373b4f6f6819f87a75b0687b81357b7c5751b720e412044155a26d32ee0f8f8ee1086d37322ecb2e50d287e2446f9ec7be402abb1b436ec09f10e5882
+  checksum: d43b7aa706fc8e532d1efb89cf5595a15fe22b8c524b42878e2ebaaf5d07f5e9b0f740da35c01056db6a20c769ac3c31092c3b05442c1f34df2198a33e20ba08
   languageName: node
   linkType: hard
 
@@ -5058,23 +5058,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/fslib@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@yarnpkg/fslib@npm:2.7.1"
+"@yarnpkg/fslib@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "@yarnpkg/fslib@npm:2.9.0"
   dependencies:
     "@yarnpkg/libzip": ^2.2.4
     tslib: ^1.13.0
-  checksum: 91ff9c52008175a1ce0227328fe56ed6255695353dc5cfb472f7b113e4a133b7722db2208959bb41c91fc23318bac28fedfa6879db5f1f645d1fcbff3b3c0185
-  languageName: node
-  linkType: hard
-
-"@yarnpkg/fslib@npm:^2.8.0":
-  version: 2.8.0
-  resolution: "@yarnpkg/fslib@npm:2.8.0"
-  dependencies:
-    "@yarnpkg/libzip": ^2.2.4
-    tslib: ^1.13.0
-  checksum: ab7fcdba0224fc3a8b76b717b57179c728462caa7c309fe72387790f8d8627395e30006dc6f8ffe2e863df5cc6a006abc72ec11a3639861f2c2c0e193a3ac213
+  checksum: a121d801c764408e4d290a343b7c811eb33d15f6c6a82c8b00c84aaa0b7bed610ca858047e8fb5e4c8b28cc29493ec19437fe43529dccf518215e5b38723fdc2
   languageName: node
   linkType: hard
 
@@ -5118,21 +5108,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnp@npm:^3.2.4":
-  version: 3.2.4
-  resolution: "@yarnpkg/pnp@npm:3.2.4"
+"@yarnpkg/pnp@npm:^3.2.5":
+  version: 3.2.5
+  resolution: "@yarnpkg/pnp@npm:3.2.5"
   dependencies:
     "@types/node": ^13.7.0
-    "@yarnpkg/fslib": ^2.8.0
-  checksum: ec74532fa03856cc44e56a4cf3c52ed2e467dd478303a2fe8d39708771a8f5af6f167d4b38f7d4a59edfe78c9f823c3bfa0a92aa4bdc665c71943cbbde98b983
+    "@yarnpkg/fslib": ^2.9.0
+  checksum: d2dd7410383ad1d59ddabc4cdb532b1bbb109bb87a1aad0414b13d46c9f66cdbbfa6008f01132345c05f445d5388b829060340bf74c14d3e7f3a212fac8dac33
   languageName: node
   linkType: hard
 
-"@yarnpkg/shell@npm:^3.2.4":
-  version: 3.2.4
-  resolution: "@yarnpkg/shell@npm:3.2.4"
+"@yarnpkg/shell@npm:^3.2.5":
+  version: 3.2.5
+  resolution: "@yarnpkg/shell@npm:3.2.5"
   dependencies:
-    "@yarnpkg/fslib": ^2.7.1
+    "@yarnpkg/fslib": ^2.9.0
     "@yarnpkg/parsers": ^2.5.1
     chalk: ^3.0.0
     clipanion: 3.2.0-rc.4
@@ -5143,7 +5133,7 @@ __metadata:
     tslib: ^1.13.0
   bin:
     shell: ./lib/cli.js
-  checksum: 78eb96d5a5d9af093b50d9727cee33f2edfb5a552b5750f237c3324c89763f965738cc7827dd7d2c1092b54e10b6a16e6390faa2880bfa984f7b29be1de925ba
+  checksum: 89fe80fec6ccd5a1a713ea11285bce17fe1f3cc42507b4e63565818c4afb41e588d368cf7c198fe2b3eeb900cae87233c2d52c27da288a57f82f85a07cf9b221
   languageName: node
   linkType: hard
 
@@ -8677,7 +8667,7 @@ __metadata:
 
 "fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -13452,7 +13442,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
   version: 1.20.0
-  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=c3c19d"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
@@ -13462,7 +13452,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>":
   version: 1.22.0
-  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"
   dependencies:
     is-core-module: ^2.8.1
     path-parse: ^1.0.7
@@ -13475,7 +13465,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
     is-core-module: ^2.9.0
     path-parse: ^1.0.7
@@ -13488,7 +13478,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^2.0.0-next.3#~builtin<compat/resolve>":
   version: 2.0.0-next.3
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=c3c19d"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
@@ -14952,7 +14942,7 @@ resolve@^2.0.0-next.3:
 
 "typescript@patch:typescript@^4.6.4#~builtin<compat/typescript>":
   version: 4.6.4
-  resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=701156"
+  resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=5d3a66"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
@@ -14962,7 +14952,7 @@ resolve@^2.0.0-next.3:
 
 "typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
   version: 4.7.4
-  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=701156"
+  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=65a307"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
