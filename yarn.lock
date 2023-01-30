@@ -3609,7 +3609,7 @@ __metadata:
   resolution: "@niieani/scaffold-monorepo@workspace:."
   dependencies:
     "@niieani/scaffold": "*"
-    "@yarnpkg/core": ^3.3.0
+    "@yarnpkg/core": ^3.3.1
   languageName: unknown
   linkType: soft
 
@@ -5106,18 +5106,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "@yarnpkg/core@npm:3.3.0"
+"@yarnpkg/core@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@yarnpkg/core@npm:3.3.1"
   dependencies:
     "@arcanis/slice-ansi": ^1.1.1
     "@types/semver": ^7.1.0
     "@types/treeify": ^1.0.0
-    "@yarnpkg/fslib": ^2.9.0
+    "@yarnpkg/fslib": ^2.10.0
     "@yarnpkg/json-proxy": ^2.1.1
     "@yarnpkg/libzip": ^2.2.4
     "@yarnpkg/parsers": ^2.5.1
-    "@yarnpkg/pnp": ^3.2.5
+    "@yarnpkg/pnp": ^3.2.6
     "@yarnpkg/shell": ^3.2.5
     camelcase: ^5.3.1
     chalk: ^3.0.0
@@ -5142,7 +5142,17 @@ __metadata:
     treeify: ^1.1.0
     tslib: ^1.13.0
     tunnel: ^0.0.6
-  checksum: d43b7aa706fc8e532d1efb89cf5595a15fe22b8c524b42878e2ebaaf5d07f5e9b0f740da35c01056db6a20c769ac3c31092c3b05442c1f34df2198a33e20ba08
+  checksum: b5a8664a4c0dd02cfa7656ca67e832ae44e9aa2e4bc7a2f102b93f5626ce81ea378f1e9fb40b3b9c375c92471046f8d0027ca2658334b7cdfa5260d234d61aed
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/fslib@npm:^2.10.0":
+  version: 2.10.0
+  resolution: "@yarnpkg/fslib@npm:2.10.0"
+  dependencies:
+    "@yarnpkg/libzip": ^2.2.4
+    tslib: ^1.13.0
+  checksum: 7c08938b442cb93ecb710f0b1e877836c3c0ead492a1d120e7ae62f96575630fa93e18f3189086156373bb03b04a1833135a7065fdd7160874b0b2b22eb34f71
   languageName: node
   linkType: hard
 
@@ -5206,13 +5216,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnp@npm:^3.2.5":
-  version: 3.2.5
-  resolution: "@yarnpkg/pnp@npm:3.2.5"
+"@yarnpkg/pnp@npm:^3.2.6":
+  version: 3.2.6
+  resolution: "@yarnpkg/pnp@npm:3.2.6"
   dependencies:
     "@types/node": ^13.7.0
-    "@yarnpkg/fslib": ^2.9.0
-  checksum: d2dd7410383ad1d59ddabc4cdb532b1bbb109bb87a1aad0414b13d46c9f66cdbbfa6008f01132345c05f445d5388b829060340bf74c14d3e7f3a212fac8dac33
+    "@yarnpkg/fslib": ^2.10.0
+  checksum: 3d866a7f6c85277560d74269a6e2d660a173931c71516dae0ab4620bdc9eec1672d352f7a8be395d1d2b27f33f7ac7bd58161135998e38d7ce393a825105207b
   languageName: node
   linkType: hard
 
