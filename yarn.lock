@@ -3722,7 +3722,7 @@ __metadata:
     "@types/eslint": ^8.4.10
     "@types/lodash": ^4.14.191
     "@types/prettier": ^2.7.2
-    "@types/which": ^2.0.1
+    "@types/which": ^2.0.2
     "@vitejs/plugin-react": ^2.2.0
     commitlint: ^17.3.0
     eslint: ^8.20.0
@@ -4743,10 +4743,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/which@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@types/which@npm:2.0.1"
-  checksum: 14e963f2ffaa79caaa13044e977456085a1024cb519478f0f5f9dc8a4f33a0ac47f0a255ccbd008efde063c75b98e846b9258b5999bac6f595e06d5518920cb7
+"@types/which@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@types/which@npm:2.0.2"
+  checksum: 8626a3c2f6db676c449142e1082e33ea0c9d88b8a2bd796366b944891e6da0088b2aa83d3fa9c79e6696f7381a851fc76d43bd353eb6c4d98a7775b4ae0a96a5
   languageName: node
   linkType: hard
 
