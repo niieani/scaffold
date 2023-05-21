@@ -6,7 +6,7 @@ import {getTargetNodeRuntime} from '@niieani/scaffold-config-constants'
 const nodeVersion = getTargetNodeRuntime()
 
 const config: eslint.Linter.Config = {
-  plugins: ['node', 'compat'],
+  plugins: ['node'],
   env: {
     browser: false,
     node: true,
@@ -56,9 +56,6 @@ const config: eslint.Linter.Config = {
     // This is a common occurrence in node scripts
     'global-require': 'off',
     'import/no-dynamic-require': 'off',
-
-    // May be enabled from the browser/react presets, so explicitly disable
-    'compat/compat': 'off',
   },
 }
 

@@ -33,6 +33,8 @@ const config: ESLintConfig = {
     'no-tabs': 'error',
     'no-nested-ternary': 'off',
     'no-plusplus': 'off',
+    // breaks with latest eslint version:
+    'unicorn/expiring-todo-comments': 'off',
 
     // require a eslint-enable comment for every eslint-disable comment
     'eslint-comments/disable-enable-pair': [

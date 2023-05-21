@@ -18,7 +18,6 @@ const config: TSConfig = {
     sourceMap: true,
     declaration: true,
     forceConsistentCasingInFileNames: true,
-    importsNotUsedAsValues: 'error',
     moduleResolution: 'node',
     noImplicitOverride: true,
     noImplicitReturns: true,
