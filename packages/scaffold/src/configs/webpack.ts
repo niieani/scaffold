@@ -56,6 +56,10 @@ export = ({
   return {
     resolve: {
       extensions: ['.ts', '.tsx', '...'],
+      extensionAlias: {
+        '.js': ['.ts', '.js'],
+        '.mjs': ['.mts', '.mjs'],
+      },
     },
     mode: 'production',
     optimization: {
