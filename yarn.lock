@@ -2586,7 +2586,7 @@ __metadata:
   resolution: "@niieani/scaffold-monorepo@workspace:."
   dependencies:
     "@niieani/scaffold": "npm:*"
-    "@yarnpkg/core": "npm:^3.5.1"
+    "@yarnpkg/core": "npm:^3.5.2"
   languageName: unknown
   linkType: soft
 
@@ -4178,9 +4178,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^3.5.1":
-  version: 3.5.1
-  resolution: "@yarnpkg/core@npm:3.5.1"
+"@yarnpkg/core@npm:^3.5.2":
+  version: 3.5.2
+  resolution: "@yarnpkg/core@npm:3.5.2"
   dependencies:
     "@arcanis/slice-ansi": "npm:^1.1.1"
     "@types/semver": "npm:^7.1.0"
@@ -4189,7 +4189,7 @@ __metadata:
     "@yarnpkg/json-proxy": "npm:^2.1.1"
     "@yarnpkg/libzip": "npm:^2.3.0"
     "@yarnpkg/parsers": "npm:^2.5.1"
-    "@yarnpkg/pnp": "npm:^3.3.2"
+    "@yarnpkg/pnp": "npm:^3.3.3"
     "@yarnpkg/shell": "npm:^3.2.5"
     camelcase: "npm:^5.3.1"
     chalk: "npm:^3.0.0"
@@ -4214,7 +4214,7 @@ __metadata:
     treeify: "npm:^1.1.0"
     tslib: "npm:^1.13.0"
     tunnel: "npm:^0.0.6"
-  checksum: e4e14de38e04a010e9bb8458a5668cd86a7c0da054e482bb0542f1f4ba86fbce31d97104050ad3fb6d65381bba6ba21295d68f48dfc1db2872ab72afb4776e21
+  checksum: f0ae74f80615568c3a0dd184c234b23cf9de69ab5c46e82f648a43423436ca9c2c999db3f9e8a0f3d7d918535ff77307147ad2184143e44a9b6e53e50f38ebee
   languageName: node
   linkType: hard
 
@@ -4258,13 +4258,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnp@npm:^3.3.2":
-  version: 3.3.2
-  resolution: "@yarnpkg/pnp@npm:3.3.2"
+"@yarnpkg/pnp@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "@yarnpkg/pnp@npm:3.3.3"
   dependencies:
     "@types/node": "npm:^13.7.0"
     "@yarnpkg/fslib": "npm:^2.10.3"
-  checksum: 9d694cff66ed4038809c927b43506a1f23a0abb00107520b336b77dd1a4beb16a69076007a3041b3017357887629bc711ba4413e4636554d88880563c489dc5a
+  checksum: 8edc69f4ac1dcf6f7da357fa50ed472561e6a3edcad93a38a18c1d3e0bb2c83158da560b21ff62be1811db06498cfb46955d0e19dcd22071e6c6cd7b7d23c046
   languageName: node
   linkType: hard
 
