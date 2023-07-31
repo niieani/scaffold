@@ -2569,7 +2569,7 @@ __metadata:
   dependencies:
     "@beemo/core": "npm:^2.1.4"
     "@vitejs/plugin-react-refresh": "npm:^1.3.6"
-    vite: "npm:^3.2.6"
+    vite: "npm:^3.2.7"
   languageName: unknown
   linkType: soft
 
@@ -13962,9 +13962,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.2.6":
-  version: 3.2.6
-  resolution: "vite@npm:3.2.6"
+"vite@npm:^3.2.7":
+  version: 3.2.7
+  resolution: "vite@npm:3.2.7"
   dependencies:
     esbuild: "npm:^0.15.9"
     fsevents: "npm:~2.3.2"
@@ -13996,7 +13996,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: af4c9e68b23537d7683f6e6d4e1efbd45dee178518efe79ed89533e6bbc097cde120a509e245c672d17a01a94ee9383adc669272e902c5f6b893ccb22c8b5873
+  checksum: 015546179fcfb2fb371f971c6054fc22294efbd80efe27cb39818e05da75fe339ccab75c3f6bcff02ca2a63bf74771a388912b5d1e945454cdcc01906bbbbd99
   languageName: node
   linkType: hard
 
