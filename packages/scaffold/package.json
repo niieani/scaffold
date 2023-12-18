@@ -41,7 +41,7 @@
     "@niieani/beemo-driver-vite": "*",
     "@niieani/scaffold-config-constants": "*",
     "@rollup/plugin-node-resolve": "^15.0.2",
-    "@swc/core": "^1.3.96",
+    "@swc/core": "^1.3.101",
     "@swc/jest": "^0.2.29",
     "@vitejs/plugin-react": "^2.2.0",
     "commitlint": "^17.8.1",
