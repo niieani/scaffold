@@ -7222,7 +7222,7 @@ __metadata:
     eslint-plugin-promise: "npm:^6.1.1"
     eslint-plugin-react: "npm:^7.32.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
-    eslint-plugin-react-perf: "npm:^3.3.1"
+    eslint-plugin-react-perf: "npm:^3.3.2"
     eslint-plugin-simple-import-sort: "npm:^10.0.0"
     eslint-plugin-unicorn: "npm:^47.0.0"
   peerDependencies:
@@ -7432,6 +7432,15 @@ __metadata:
   peerDependencies:
     eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
   checksum: a0bf61d2c1aac2ea9151d2d5d8b682de426b638db898e8ac39412d7ffc49862817efa324df23afe39b3c800b0e62b6bbd992265416e713a3c05085d352074528
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-react-perf@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "eslint-plugin-react-perf@npm:3.3.2"
+  peerDependencies:
+    eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: a32fb4b7abe5d4cfb0f14263eddbcccd1077fdda22e12ae33b7261dcda9997219e9c97f5c02314e6e816362c2329cedb8d0614dbba409e382b0b64828a69c06e
   languageName: node
   linkType: hard
 
