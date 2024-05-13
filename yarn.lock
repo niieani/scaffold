@@ -3134,7 +3134,7 @@ __metadata:
     "@swc/jest": "npm:^0.2.36"
     "@types/babel__core": "npm:^7.20.5"
     "@types/babel__preset-env": "npm:^7.9.6"
-    "@types/eslint": "npm:^8.4.10"
+    "@types/eslint": "npm:^8.56.10"
     "@types/lodash": "npm:^4.17.1"
     "@types/prettier": "npm:^2.7.3"
     "@types/which": "npm:^2.0.2"
@@ -4052,13 +4052,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^8.37.0, @types/eslint@npm:^8.4.1, @types/eslint@npm:^8.4.10":
+"@types/eslint@npm:*, @types/eslint@npm:^8.4.1":
   version: 8.37.0
   resolution: "@types/eslint@npm:8.37.0"
   dependencies:
     "@types/estree": "npm:*"
     "@types/json-schema": "npm:*"
   checksum: 5a1b547b4fbebeb173fd3e4a717de868021a14322cb7bd1bc2b432f3ac3cfec2e268623d24543a4ca7787fe64c59dd310a6ee329199e9f16b0d168d26a2da026
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:^8.56.10":
+  version: 8.56.10
+  resolution: "@types/eslint@npm:8.56.10"
+  dependencies:
+    "@types/estree": "npm:*"
+    "@types/json-schema": "npm:*"
+  checksum: f3e807e5684dc0fd1dd7e3b2e635898a928217f7c9353ad334b60a333b4415ba6ca6e1787b30e46660bf02de16b5de8701f6142c14b4faed5705f600dd262a18
   languageName: node
   linkType: hard
 
@@ -7385,7 +7395,7 @@ __metadata:
   resolution: "eslint-config-niieani@workspace:packages/eslint-config"
   dependencies:
     "@niieani/scaffold-config-constants": "npm:*"
-    "@types/eslint": "npm:^8.37.0"
+    "@types/eslint": "npm:^8.56.10"
     "@typescript-eslint/eslint-plugin": "npm:^5.62.0"
     "@typescript-eslint/parser": "npm:^5.62.0"
     eslint: "npm:^8.41.0"
