@@ -3035,7 +3035,7 @@ __metadata:
     "@swc/core": "npm:^1.4.17"
     "@swc/jest": "npm:^0.2.36"
     "@types/babel__core": "npm:^7.20.5"
-    "@types/babel__preset-env": "npm:^7.9.6"
+    "@types/babel__preset-env": "npm:^7.9.7"
     "@types/eslint": "npm:^8.56.10"
     "@types/lodash": "npm:^4.17.5"
     "@types/prettier": "npm:^2.7.3"
@@ -3890,10 +3890,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__preset-env@npm:^7.9.6":
-  version: 7.9.6
-  resolution: "@types/babel__preset-env@npm:7.9.6"
-  checksum: 209f410f9e35bcf953363f3005a53230db70eafa7b29ff34c2708699f014c30977d7b61009207a8b05f723989f6da153b72217920a8bcb87fe10e89cc74b79c5
+"@types/babel__preset-env@npm:^7.9.7":
+  version: 7.9.7
+  resolution: "@types/babel__preset-env@npm:7.9.7"
+  checksum: 916dc2284fffb68b29e6f2a13119afaacd66e8b91a0bcdc83f9fde5959f47e87d2dc516e4d491bf393cc50dd1190be4b5e3c14b901baf4a6b5436c996591b8e9
   languageName: node
   linkType: hard
 
