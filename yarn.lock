@@ -3037,7 +3037,7 @@ __metadata:
     "@types/babel__core": "npm:^7.20.5"
     "@types/babel__preset-env": "npm:^7.9.7"
     "@types/eslint": "npm:^8.56.10"
-    "@types/lodash": "npm:^4.17.5"
+    "@types/lodash": "npm:^4.17.6"
     "@types/prettier": "npm:^2.7.3"
     "@types/which": "npm:^2.0.2"
     "@vitejs/plugin-react": "npm:^2.2.0"
@@ -4085,10 +4085,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.17.5":
-  version: 4.17.5
-  resolution: "@types/lodash@npm:4.17.5"
-  checksum: ad38a5c0a5aecefc9081fe5552f38769945b9299dd8324a132d045ed3a3b6f78a1f80b99e2f29e8f0987312c468fc007204d39d2d966f1b71ccb60572bcc9e0d
+"@types/lodash@npm:^4.17.6":
+  version: 4.17.6
+  resolution: "@types/lodash@npm:4.17.6"
+  checksum: e881233cb2fb38d063859597ecd4bd90fb27449d4c038f180452832342b0701c86144efb26acbd2c8981753c9c9152daefc3c20040c7966c4f941418e7af8748
   languageName: node
   linkType: hard
 
