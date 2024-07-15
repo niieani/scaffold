@@ -40,7 +40,7 @@
     "@commitlint/config-conventional": "^17.8.1",
     "@niieani/beemo-driver-vite": "*",
     "@niieani/scaffold-config-constants": "*",
-    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@swc/core": "^1.4.17",
     "@swc/jest": "^0.2.36",
     "@vitejs/plugin-react": "^2.2.0",
