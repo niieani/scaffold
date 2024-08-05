@@ -3245,7 +3245,7 @@ __metadata:
     "@swc/jest": "npm:^0.2.36"
     "@types/babel__core": "npm:^7.20.5"
     "@types/babel__preset-env": "npm:^7.9.7"
-    "@types/eslint": "npm:^8.56.10"
+    "@types/eslint": "npm:^8.56.11"
     "@types/lodash": "npm:^4.17.7"
     "@types/prettier": "npm:^2.7.3"
     "@types/which": "npm:^2.0.2"
@@ -4173,13 +4173,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^8.56.10":
-  version: 8.56.10
-  resolution: "@types/eslint@npm:8.56.10"
+"@types/eslint@npm:^8.56.11":
+  version: 8.56.11
+  resolution: "@types/eslint@npm:8.56.11"
   dependencies:
     "@types/estree": "npm:*"
     "@types/json-schema": "npm:*"
-  checksum: f3e807e5684dc0fd1dd7e3b2e635898a928217f7c9353ad334b60a333b4415ba6ca6e1787b30e46660bf02de16b5de8701f6142c14b4faed5705f600dd262a18
+  checksum: e5a1b7af8618f9c5e44629bc50b098f6f87b5c9b3cc1e2a3b2fcb9d44e5165ee68bf1e7cb9e57c8e6a7e7d26631343b04c5abb170a0ac4ccff123b8d6851482c
   languageName: node
   linkType: hard
 
@@ -7541,7 +7541,7 @@ __metadata:
   resolution: "eslint-config-niieani@workspace:packages/eslint-config"
   dependencies:
     "@niieani/scaffold-config-constants": "npm:*"
-    "@types/eslint": "npm:^8.56.10"
+    "@types/eslint": "npm:^8.56.11"
     "@typescript-eslint/eslint-plugin": "npm:^5.62.0"
     "@typescript-eslint/parser": "npm:^5.62.0"
     eslint: "npm:^8.41.0"
