@@ -3412,7 +3412,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:^17.8.1"
     "@niieani/beemo-driver-vite": "npm:*"
     "@niieani/scaffold-config-constants": "npm:*"
-    "@rollup/plugin-node-resolve": "npm:^15.2.3"
+    "@rollup/plugin-node-resolve": "npm:^15.2.4"
     "@swc/core": "npm:^1.7.26"
     "@swc/jest": "npm:^0.2.36"
     "@types/babel__core": "npm:^7.20.5"
@@ -3847,14 +3847,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-node-resolve@npm:^15.2.3":
-  version: 15.2.3
-  resolution: "@rollup/plugin-node-resolve@npm:15.2.3"
+"@rollup/plugin-node-resolve@npm:^15.2.4":
+  version: 15.3.0
+  resolution: "@rollup/plugin-node-resolve@npm:15.3.0"
   dependencies:
     "@rollup/pluginutils": "npm:^5.0.1"
     "@types/resolve": "npm:1.20.2"
     deepmerge: "npm:^4.2.2"
-    is-builtin-module: "npm:^3.2.1"
     is-module: "npm:^1.0.0"
     resolve: "npm:^1.22.1"
   peerDependencies:
@@ -3862,7 +3861,7 @@ __metadata:
   peerDependenciesMeta:
     rollup:
       optional: true
-  checksum: a6c794eaf131ee1b70037d8f8333f041ffc163cc1a242cdaec1acfa489a0cebf86f36dd0d53cc7d23453b72f3cfe68a3e5038846980f91bedd33084658b3d4d4
+  checksum: 0f01adb6297e2d7626a378454b9293576eb5c87fbde162c13217c9be20253789b8038b7b76d176b5eb4b6981a6f356db67de58464cc8347428aeb53150441d08
   languageName: node
   linkType: hard
 
