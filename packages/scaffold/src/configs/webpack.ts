@@ -82,7 +82,6 @@ export = ({
               options: {
                 transpileOnly: true,
                 compilerOptions: {
-                  module: 'esnext',
                   target: codeTarget,
                   esModuleInterop: false,
                   sourceMap: true,
