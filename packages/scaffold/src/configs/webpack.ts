@@ -79,9 +79,9 @@ export = ({
           use: [
             {
               loader: 'ts-loader',
-              context: process.cwd(),
               options: {
                 transpileOnly: true,
+                context: process.cwd(),
                 compilerOptions: {
                   target: codeTarget,
                   esModuleInterop: false,
