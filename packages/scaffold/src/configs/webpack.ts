@@ -79,6 +79,7 @@ export = ({
           use: [
             {
               loader: 'ts-loader',
+              context: process.cwd(),
               options: {
                 transpileOnly: true,
                 compilerOptions: {
