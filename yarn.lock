@@ -2977,7 +2977,7 @@ __metadata:
     lodash: "npm:^4.17.21"
     multi-semantic-release: "npm:^3.0.2"
     prettier: "npm:^2.8.8"
-    rollup: "npm:^2.79.1"
+    rollup: "npm:^2.79.2"
     sort-package-json: "npm:^1.57.0"
     ts-loader: "npm:^9.4.4"
     typescript: "npm:^5.0.4"
@@ -13091,6 +13091,20 @@ __metadata:
   bin:
     rollup: dist/bin/rollup
   checksum: b91c27c3b5234af864f282ffa2c13891d9caf25cad8ba7ad11f5201bdb6516f10c90a8c3402a5f72eafc74a555b1c685b6b04d107a6d6866195812a82f4aa308
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^2.79.2":
+  version: 2.79.2
+  resolution: "rollup@npm:2.79.2"
+  dependencies:
+    fsevents: "npm:~2.3.2"
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: 17ac2f09568db65ffcc25e29a00f4b44bd48c9825b56d414e87490a3dcceaa9ff7f5984a367217abc9e39a619ae1f9052adc160c5e81b6f6ca91c46c334df59e
   languageName: node
   linkType: hard
 
