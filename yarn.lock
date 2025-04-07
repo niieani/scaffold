@@ -7352,7 +7352,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^5.62.0"
     eslint: "npm:^8.41.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
-    eslint-config-prettier: "npm:^8.8.0"
+    eslint-config-prettier: "npm:^8.10.0"
     eslint-plugin-compat: "npm:^4.1.4"
     eslint-plugin-import: "npm:^2.27.5"
     eslint-plugin-jest: "npm:^27.2.3"
@@ -7369,7 +7369,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-prettier@npm:^8.5.0, eslint-config-prettier@npm:^8.8.0":
+"eslint-config-prettier@npm:^8.10.0":
+  version: 8.10.0
+  resolution: "eslint-config-prettier@npm:8.10.0"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: bin/cli.js
+  checksum: e907461b85b14216f4b30cfeda677ba36b73fbc2dcf19ad7514a5d635c7495956c9d45228e554411ce0527304aa4dec27c6c278a69401dff4acde5800963c30c
+  languageName: node
+  linkType: hard
+
+"eslint-config-prettier@npm:^8.5.0":
   version: 8.8.0
   resolution: "eslint-config-prettier@npm:8.8.0"
   peerDependencies:
