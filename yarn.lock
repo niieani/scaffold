@@ -3034,6 +3034,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdn/browser-compat-data@npm:^5.3.13":
+  version: 5.7.6
+  resolution: "@mdn/browser-compat-data@npm:5.7.6"
+  checksum: 86584ea37051541f94dabdbecb1d951fee17dee8734b1842b6b122a5cbebb94a8c88326c97fbce346e5277c73eb570f840d450a11e1433efa47c7fbc75334bda
+  languageName: node
+  linkType: hard
+
 "@niieani/beemo-driver-vite@workspace:*, @niieani/beemo-driver-vite@workspace:packages/driver-vite":
   version: 0.0.0-use.local
   resolution: "@niieani/beemo-driver-vite@workspace:packages/driver-vite"
@@ -5562,6 +5569,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"browserslist@npm:^4.21.10, browserslist@npm:^4.24.3":
+  version: 4.24.4
+  resolution: "browserslist@npm:4.24.4"
+  dependencies:
+    caniuse-lite: "npm:^1.0.30001688"
+    electron-to-chromium: "npm:^1.5.73"
+    node-releases: "npm:^2.0.19"
+    update-browserslist-db: "npm:^1.1.1"
+  bin:
+    browserslist: cli.js
+  checksum: bdb9a1ebdb51251cdc85afe1fff185df2c0375bfe4c9111c805dea0797a5a33a7d7bb6c14bd5975d31e4faf9aef45a357514708f0bec52ab913e95ec70ad9348
+  languageName: node
+  linkType: hard
+
 "browserslist@npm:^4.21.9":
   version: 4.22.1
   resolution: "browserslist@npm:4.22.1"
@@ -5587,20 +5608,6 @@ __metadata:
   bin:
     browserslist: cli.js
   checksum: 4216f7b9eea3226379e294576ffef5e7f58a1d93bf5dce5c6f3bbdc3412cfacd6d84ed569f4b730148e6af87161443815bbd2f7fd16aee812d96ac033297d618
-  languageName: node
-  linkType: hard
-
-"browserslist@npm:^4.24.3":
-  version: 4.24.4
-  resolution: "browserslist@npm:4.24.4"
-  dependencies:
-    caniuse-lite: "npm:^1.0.30001688"
-    electron-to-chromium: "npm:^1.5.73"
-    node-releases: "npm:^2.0.19"
-    update-browserslist-db: "npm:^1.1.1"
-  bin:
-    browserslist: cli.js
-  checksum: bdb9a1ebdb51251cdc85afe1fff185df2c0375bfe4c9111c805dea0797a5a33a7d7bb6c14bd5975d31e4faf9aef45a357514708f0bec52ab913e95ec70ad9348
   languageName: node
   linkType: hard
 
@@ -5750,6 +5757,13 @@ __metadata:
   version: 1.0.30001488
   resolution: "caniuse-lite@npm:1.0.30001488"
   checksum: cec039ac89ce2dfc125cd994f3c0b4f9f49109f2e19f1fc29383f37a64b90b1762490d641f29de3e92602e1ec53d8b219675f990d6aa9083e518e1f0f5347b09
+  languageName: node
+  linkType: hard
+
+"caniuse-lite@npm:^1.0.30001524":
+  version: 1.0.30001713
+  resolution: "caniuse-lite@npm:1.0.30001713"
+  checksum: 9827355c172cde59efc9a9a238c1e227c2c9168e5e67a50254cf2c89ee8cd74b42397b314b3a3e24224ce759e58342a8c47186d7d9dfd517756f4acb182599ae
   languageName: node
   linkType: hard
 
@@ -7353,7 +7367,7 @@ __metadata:
     eslint: "npm:^8.41.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-config-prettier: "npm:^8.10.0"
-    eslint-plugin-compat: "npm:^4.1.4"
+    eslint-plugin-compat: "npm:^4.2.0"
     eslint-plugin-import: "npm:^2.27.5"
     eslint-plugin-jest: "npm:^27.2.3"
     eslint-plugin-jsx-a11y: "npm:^6.7.1"
@@ -7414,7 +7428,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-compat@npm:^4.0.2, eslint-plugin-compat@npm:^4.1.4":
+"eslint-plugin-compat@npm:^4.0.2":
   version: 4.1.4
   resolution: "eslint-plugin-compat@npm:4.1.4"
   dependencies:
@@ -7429,6 +7443,23 @@ __metadata:
   peerDependencies:
     eslint: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
   checksum: 1fa2e528600abcafd025052d369584f028ede3308e11494b770b1a01aa941835a902c63d6755565f3e30720db9d7956fbaa6b49705d2325fb516e630682deab4
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-compat@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "eslint-plugin-compat@npm:4.2.0"
+  dependencies:
+    "@mdn/browser-compat-data": "npm:^5.3.13"
+    ast-metadata-inferer: "npm:^0.8.0"
+    browserslist: "npm:^4.21.10"
+    caniuse-lite: "npm:^1.0.30001524"
+    find-up: "npm:^5.0.0"
+    lodash.memoize: "npm:^4.1.2"
+    semver: "npm:^7.5.4"
+  peerDependencies:
+    eslint: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: 49eb96efe8a5eebb7aea1fa1720dc24c5ddb88358358bb8e317078043b26830b1fc9265d0c5f7a0a55510f1ee38fe44b3e2f4bd523a74bd2dd304898ffba5f56
   languageName: node
   linkType: hard
 
@@ -10853,7 +10884,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.memoize@npm:4.1.2":
+"lodash.memoize@npm:4.1.2, lodash.memoize@npm:^4.1.2":
   version: 4.1.2
   resolution: "lodash.memoize@npm:4.1.2"
   checksum: f48328f75ecb118629197850ad19ced8d8cd5833c1d461fa5f9923e8b06125ba20b871e6a3ebfe72c0d2d4ee6437733969334bae50bc02840b278a8b4589ac2e
@@ -13428,6 +13459,15 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 20fce7894334634f553a64334b21fa2dc7cccd08a5f31122c187f1c1d3e45b8fc47d599d3fa52342c3fb3ee0bd139a8fbd41bc5b9e849ada8f7e7cc91b18a180
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.5.4":
+  version: 7.7.1
+  resolution: "semver@npm:7.7.1"
+  bin:
+    semver: bin/semver.js
+  checksum: 6faeb390dfb90d25d1ab035222d02572a0c20468e14ef06fc45833e678c0f9245c6de8394f78781b65f085b127dca732713bc631847c77f876b4ccd5c99db235
   languageName: node
   linkType: hard
 
