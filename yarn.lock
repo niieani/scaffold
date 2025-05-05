@@ -3091,7 +3091,7 @@ __metadata:
     "@niieani/scaffold-config-constants": "npm:*"
     "@rollup/plugin-node-resolve": "npm:^15.3.1"
     "@swc/core": "npm:^1.7.42"
-    "@swc/jest": "npm:^0.2.37"
+    "@swc/jest": "npm:^0.2.38"
     "@types/babel__core": "npm:^7.20.5"
     "@types/babel__preset-env": "npm:^7.10.0"
     "@types/eslint": "npm:^8.56.12"
@@ -3848,16 +3848,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/jest@npm:^0.2.37":
-  version: 0.2.37
-  resolution: "@swc/jest@npm:0.2.37"
+"@swc/jest@npm:^0.2.38":
+  version: 0.2.38
+  resolution: "@swc/jest@npm:0.2.38"
   dependencies:
     "@jest/create-cache-key-function": "npm:^29.7.0"
     "@swc/counter": "npm:^0.1.3"
     jsonc-parser: "npm:^3.2.0"
   peerDependencies:
     "@swc/core": "*"
-  checksum: 8207532034220cf007d15347dcb9156829845c5e56b701fe24d7104dc1402021ecbe4a27c084e4e4dff3f97a99787a1a795fe606dd041186bc5d16c69279751d
+  checksum: 7c10c2a216f6b18607594790689a2d8192c49740cd85441271a5af6d024e975e9cc728b2a7b537688cf67479b1e234a3d2ce7f606060142ca9194aa811abe220
   languageName: node
   linkType: hard
 
