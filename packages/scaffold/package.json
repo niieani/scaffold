@@ -24,7 +24,7 @@
   "sideEffects": false,
   "dependencies": {
     "@babel/core": "^7.28.5",
-    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-env": "^7.28.5",
     "@beemo/cli": "^2.0.6",
     "@beemo/config-constants": "^2.2.0",
     "@beemo/config-eslint": "^2.0.3",
