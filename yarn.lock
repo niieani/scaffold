@@ -3283,7 +3283,7 @@ __metadata:
     husky: "npm:^8.0.3"
     jest: "npm:^29.5.0"
     jest-preset-beemo: "npm:^2.2.1"
-    lodash: "npm:^4.17.21"
+    lodash: "npm:^4.17.23"
     multi-semantic-release: "npm:^3.0.2"
     prettier: "npm:^2.8.8"
     rollup: "npm:^2.79.2"
@@ -11914,6 +11914,13 @@ __metadata:
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 3ac18e92108d68f88429fcddee609e42cf2b653583d9bac22308815a4cd6b185b89a0ad0d9b0c670c371d9d6b61571a98fee6b36e1db14e52766ca253ed9cba0
+  languageName: node
+  linkType: hard
+
+"lodash@npm:^4.17.23":
+  version: 4.17.23
+  resolution: "lodash@npm:4.17.23"
+  checksum: a36308f39d9dd3e35430ee0f4270ad3d3be27c8f27e72bc3a106e91dd1cdf414856a6b07f7198a18c52eb7af8e8093a0b6195cbd11627a084c22490c4b57245e
   languageName: node
   linkType: hard
 
